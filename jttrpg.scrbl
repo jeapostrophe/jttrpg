@@ -22,7 +22,17 @@ situations, as well as allowing a lot of creativity in general.
 
 @section{Settings}
 
-XXX
+XXX Look at other ideas and write down example classes/rolls/etc.
+
+Fantasy - High, Low, Tolkien, Dark, Gritty, From-the-Farmers, Point-of-Light
+Medieval - Arthurian, Westeros, Realistic
+Modern - Spy, Crime, Heist, Zombies
+SciFi - Star Wars, Star Trek, Firefly
+Super Heroes
+Post-apocalypse
+Western
+Dystopia
+High School+ - Monsters, Vampires, Super Hero, Aliens, Chosen One, Magical Girl
 
 @section{Campaigns}
 
