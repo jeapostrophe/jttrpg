@@ -15,55 +15,94 @@
 This document describes the tabletop role-playing game I play with my
 kids and friends. It is deliberately described in an abstract way,
 because we apply it to different scenarios and settings as our taste
-changes. It attempts to have strategic thinking in "combat"
-situations, as well as allowing a lot of creativity in general.
+changes. It attempts to have strategic thinking, with lots of
+creativity in general.
 
 @table-of-contents[]
 
-@section{Settings}
-
-XXX Look at other ideas and write down example classes/rolls/etc.
-
-Fantasy - High, Low, Tolkien, Dark, Gritty, From-the-Farmers, Point-of-Light
-Medieval - Arthurian, Westeros, Realistic
-Modern - Spy, Crime, Heist, Zombies
-SciFi - Star Wars, Star Trek, Firefly
-Super Heroes
-Post-apocalypse
-Western
-Dystopia
-High School+ - Monsters, Vampires, Super Hero, Aliens, Chosen One, Magical Girl
-
-@section{Campaigns}
-
-XXX
-
-@section{Characters}
-
-XXX
-
-@section{Adventures}
-
-XXX
-
 @section{Mechanics}
 
-A @DT{play group} is a @T{gamemaster} and multiple
-@T{leads} controlled by @DT{players}. A @DT{lead} is an
-important fictional character controlled by a human @T{player}. The
-@DT{gamemaster} (or GM) controls the rest of the universe and
-adjudicates between @T{leads}.
+A @DT{play group} is a @T{gamemaster} and multiple @T{leads}
+controlled by @DT{players}. A @DT{lead} is an important fictional
+character controlled by a human @T{player}. The @DT{gamemaster} (or
+@DT{GM}) controls the rest of the universe and adjudicates between
+@T{leads}.
 
-Each @T{lead} has a deck of normal playings cards, called their
-@DT{deck}. The @T{deck} is divided into three partitions: the @T{draw
-pile} and the @T{discard pile}. The top @HOW-BIG-HANDs cards of the
-@T{draw pile} are the @DT{hand} (if the @T{draw pile} does not contain
-@HOW-BIG-HANDs cards, then the @T{hand} is smaller than usual.)  The
-@DT{draw pile} is initially the entire @T{deck}. The @DT{discard pile}
-is initially empty. Only cards in the @T{hand} may be @T{used}. When a
-card is @DT{used}, it is put in the @T{discard pile}. If the @T{draw
-pile} is empty, the @T{discard pile} is re-shuffled and becomes the
-@T{draw pile}.
+The @T{play group} has a deck of normal playing cards, called the
+@DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
+pile} and the @DT{discard pile}. At the start of a play session, the
+@T{discard pile} is empty and each @T{lead} is dealt a @DT{hand} of
+@HOW-BIG-HANDs cards from the @T{draw pile}. When a @T{lead} @T{plays}
+a card, then it is put in the @T{discard pile}. When the @T{lead}'s
+@T{hand} is empty, then they draw @HOW-BIG-HANDs cards from the
+@T{draw pile}, reshuffling the @T{discard pile} as the new @T{draw
+pile} if necessary.
+
+@subsection{Lead Statistics}
+
+Each @T{lead} has a few mechanical concepts associated with them:
+@T{attributes}, @T{hit boxes}, and XXX.
+
+@subsubsection{Attributes}
+
+A @T{lead} has four @DT{attributes}, which are each associated with various
+actions and qualities:
+@itemlist[
+
+@; XXX Add qualities to list
+
+@item{@DT{Toughness} - Bend, Absorb, Pry, Throw, Hack, Slash, Flex,
+Endure, Break, Bust, Jump, Climb, Swim, Chug, Sprint, Crush, Push,
+Pull, Lift, Carry, etc.}
+
+@item{@DT{Agility} - Escape, Elude, Deflect, Shoot, Skewer, Dodge,
+Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick, Disarm,
+Stun, Tie, etc.}
+
+@item{@DT{Intellect} - Study, Solve, Riddle, Cast, Think, Remember,
+Ponder, Deduce, Reason, Decipher, Invent, Search, Convince, Debate,
+Hypothesize, etc.}
+
+@item{@DT{Spirit} - Disrupt, Channel, Commune, Sense, Pray, Motivate,
+Appeal, Empathize, Persude, Intimidate, Intuit, Order, Command,
+Provoke, etc.}
+
+]
+
+Each @T{attribute} is associated with a @T{suit} in the @T{deck}:
+@itemlist[
+@item{@T{Toughness} - @card{Clubs}}
+@item{@T{Agility} - @card{Spades}}
+@item{@T{Intellect} - @card{Diamonds}}
+@item{@T{Spirit} - @card{Hearts}}
+]
+
+Each @T{attribute} has an associated @DT{lead modifier} between
+@litchar{-2} and @litchar{+2}.
+
+@subsubsection{Hit Boxes}
+
+A @T{lead} has a certain number of @DT{hit boxes}, representing their
+ability to deal with adversity.
+
+When a @T{lead} fails to avoid adversity, then they fill in one @T{hit
+box} with a negative @T{tag} related to the particular
+circumstance. The @T{tag} should be written inside the box and must be
+dealt with before it may be removed.
+
+If all @T{hit boxes} are filled in, then the character is ``down'' and
+the direction of the adventure or campaign should change to address
+the problem.
+
+@bold{Example:} Tom blasts the crystal with his laser vision, but the
+heat blast bounces off, hitting him in the eye, and blinding him. Tom
+writes ``blind'' in one of his hit boxes.
+
+@bold{Example:} Oscar opens the chest to reveal a viewing portal into
+the Unseen Darkness where he sees The Undying One. The sight corrupts
+Oscar's psyche and he writes ``neurotic'' in one of his hit boxes.
+
+@subsection{Basic Mechanic}
 
 The @DT{basic mechanic} is for a @T{lead} to describe their action. If
 the action could be done by any normal person in the circumstances,
@@ -75,12 +114,16 @@ result of a @T{test} is a @T{consequence}.
 
 A @DT{consequence} is either @T{success}, @T{partial}, or @T{failure}.
 
-On a @DT{success}, the player gets what they want and positive
-results are narrated by the @T{gamemaster}.
+On a @DT{success}, the action is successful and the @T{player}
+controls the story for a little bit, narrating the results of their
+successful action. (Occasionally it is more appropriate for the
+@T{gamemaster} to narrate.)
 
 On a @DT{partial}, the main result is accomplished but there are some
-negative results, collaboratively determined by the
-@T{gamemaster} and @T{player}.
+negative results, collaboratively determined by the @T{gamemaster} and
+@T{player}. Often it is best for the @T{gamemaster} to give a few
+options, let the @T{player} decide which ones happen, and then
+narrate.
 
 On a @DT{failure}, the @T{gamemaster} chooses and narrates the
 negative results.
@@ -99,21 +142,48 @@ what you want and experience hard consequences.
 
 @subsection{Tests}
 
-There are two kinds of @DT{tests}: @T{contests} and @T{displays}.
+Each test is associated with an @T{attribute} corresponding to the
+kind of action that is being performed, this is called the @T{test
+suit}.
+
+There are two variants of @DT{tests}: @T{displays}, for when one
+@T{lead} is involved, and @T{contests}, for when multiple @T{leads}
+compete.
+
+@subsubsection{Displays}
+
+In a @DT{display}, the @T{lead} selects a card from their @T{hand} and
+uses it. The @T{GM} selects the next card from the @T{draw pile}. Each
+card is inspected after incorporating all applicable @T{modifiers}.
+
+If the @T{lead}'s card is a @card{Face} card @bold{AND} is greater than or
+equal to the @T{GM}'s card, then the @T{display} is a @T{success}.
+
+If the @T{lead}'s card is a @card{Face} card @bold{OR} is greater than or
+equal to the @T{GM}'s card, then the @T{display} is a @T{partial}.
+
+Otherwise, the @T{display} is a @T{failure}.
+
+@bold{Example:} Jean is researching the toxin sample discovered in the
+body of the victim and plays a @card{Eight}, the @T{GM} draws a
+@card{Seven}, so he learns that it is extra-terrestial in origin, but
+destroys the sample in the process.
+
+@bold{Example:} Elizabeth attacks the screen ogre with her scathing
+wit and plays a @card{King}, the @T{GM} draws a @card{King}, so
+Elizabeth shatters the ogre and continues the day victorious.
 
 @subsubsection{Contests}
 
-In a @DT{contest}, there are @racket[n] participants. Each participant
-that is a @T{lead} selects a card from their @T{hand} and declares it
-@T{used}. Participants that are not @T{lead}s take the bottom card
-from the @T{draw pile} of the @T{lead} that initiated the @T{contest}
-and it is @T{used}. No card should not be revealed until all @T{lead}s
-have @T{used} a card. The cards are ordered after incorporating all
-applicable @T{modifiers}. The player of the highest card has a
-@T{success}. The player of the lowest card has a @T{failure}. The
-player of all card in the middle have a @T{partial}. @margin-note{A
-@T{contest} involving two participants never has a @T{partial} result
-for either.}
+In a @DT{contest}, there are @racket[n] participants which are all
+@T{lead}s. Each participant selects a card from their @T{hand} and
+uses it. No card should not be revealed until all @T{lead}s have used
+a card. The cards are ordered after incorporating all applicable
+@T{modifiers}. The player of the unique highest card has a
+@T{success}. The player of the unique lowest card has a
+@T{failure}. The player of all cards in the middle have a
+@T{partial}. @margin-note{A @T{contest} involving two participants
+never has a @T{partial} result for either.}
 
 @bold{Example:} Pete, Chloe, and Lana---all @T{leads}---race across
 the room to grab the fallen meteor rock. Pete chooses a @card{Jack},
@@ -121,6 +191,8 @@ Chloe chooses a @card{Queen}, and Lana plays the @card{Seven}. Chloe
 reaches the rock first, Pete gets across the room but not in time,
 while Lana's jacket is stuck on the cappuchino machine and it is
 tumbling towards her.
+
+@subsubsection{Meta Notes}
 
 @bold{Strategic Note:} @T{Leads} know which cards they have already
 played and which they have not, so they have a fuzzy estimate of what
@@ -130,29 +202,76 @@ commit to each action.
 
 @bold{Gamemastering Note:} The @T{gamemaster} never directly opposes
 the players strategically, because non-@T{lead} contestants have their
-card randomly chosen (from their opponent's deck!)
-
-@subsubsection{Displays}
-
-A @DT{display} is a like a @T{contest}, except that there is only one
-participant, which is a @T{lead}. Since there will be only one card,
-then it is always ordered highest. So instead, a card smaller than
-@card{Five} is a @T{failure} and a card larger than @card{Nine} is a
-@T{success}, and all other cards are @T{partial}.
-
-@bold{Example:} Jean is researching the toxin sample discovered in the
-body of the victim and plays a @card{Eight}, so he learns that it is
-extra-terrestial in origin, but destroys the sample in the process.
+card randomly chosen.
 
 @subsection{Modifiers}
 
+XXX lead modifiers
+XXX traits
+XXX test suit
+
 XXX
 
-@section{Gamemastering}
+@subsection{Character Creation}
+
+XXX attributes
+XXX tags
+XXX hit boxes (short-term, long-term, etc)
+
+@bold{Variant Note:} The system above is tuned for representing
+short-term adversity, like damage and fighting spirit. If instead you
+wish to represent long-term adversity, like general health and mental
+wellness, you will want to tweak the scale.
+
+@subsection{Actions}
 
 XXX
 
-@subsection{Story Advice}
+@subsection{Combat}
+
+XXX
+
+ammo
+
+defensive / carry
+
+-- battlefield - abstract like makeyou kingdom
+
++ Simultaneous combat (with cards) --- establish defenses, attacks,
+   ranges, etc --- then resolve
+
+commit card during combat
+
+@section{Flavor}
+
+@subsection{Settings}
+
+XXX Look at other ideas and write down example classes/rolls/etc.
+
+Fantasy - High, Low, Tolkien, Dark, Gritty, From-the-Farmers, Point-of-Light
+Medieval - Arthurian, Westeros, Realistic
+Modern - Spy, Crime, Heist, Zombies
+SciFi - Star Wars, Star Trek, Firefly
+Super Heroes
+Post-apocalypse
+Western
+Dystopia
+High School+ - Monsters, Vampires, Super Hero, Aliens, Chosen One, Magical Girl
+
+@subsection{Campaigns}
+
+XXX
+
+@subsection{Characters}
+
+XXX
+
+@subsection{Adventures}
+
+XXX
+
+
+@section{Advice}
 
 XXX
 
