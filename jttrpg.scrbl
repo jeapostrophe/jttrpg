@@ -1,5 +1,6 @@
 #lang scribble/base
-@(require scribble/manual)
+@(require racket/list
+          scribble/manual)
 
 @(begin
    (define DT deftech)
@@ -37,70 +38,6 @@ a card, then it is put in the @T{discard pile}. When the @T{lead}'s
 @T{hand} is empty, then they draw @HOW-BIG-HANDs cards from the
 @T{draw pile}, reshuffling the @T{discard pile} as the new @T{draw
 pile} if necessary.
-
-@subsection{Lead Statistics}
-
-Each @T{lead} has a few mechanical concepts associated with them:
-@T{attributes}, @T{hit boxes}, and XXX.
-
-@subsubsection{Attributes}
-
-A @T{lead} has four @DT{attributes}, which are each associated with various
-actions and qualities:
-@itemlist[
-
-@; XXX Add qualities to list
-
-@item{@DT{Toughness} - Bend, Absorb, Pry, Throw, Hack, Slash, Flex,
-Endure, Break, Bust, Jump, Climb, Swim, Chug, Sprint, Crush, Push,
-Pull, Lift, Carry, etc.}
-
-@item{@DT{Agility} - Escape, Elude, Deflect, Shoot, Skewer, Dodge,
-Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick, Disarm,
-Stun, Tie, etc.}
-
-@item{@DT{Intellect} - Study, Solve, Riddle, Cast, Think, Remember,
-Ponder, Deduce, Reason, Decipher, Invent, Search, Convince, Debate,
-Hypothesize, etc.}
-
-@item{@DT{Spirit} - Disrupt, Channel, Commune, Sense, Pray, Motivate,
-Appeal, Empathize, Persude, Intimidate, Intuit, Order, Command,
-Provoke, etc.}
-
-]
-
-Each @T{attribute} is associated with a @T{suit} in the @T{deck}:
-@itemlist[
-@item{@T{Toughness} - @card{Clubs}}
-@item{@T{Agility} - @card{Spades}}
-@item{@T{Intellect} - @card{Diamonds}}
-@item{@T{Spirit} - @card{Hearts}}
-]
-
-Each @T{attribute} has an associated @DT{lead modifier} between
-@litchar{-2} and @litchar{+2}.
-
-@subsubsection{Hit Boxes}
-
-A @T{lead} has a certain number of @DT{hit boxes}, representing their
-ability to deal with adversity.
-
-When a @T{lead} fails to avoid adversity, then they fill in one @T{hit
-box} with a negative @T{tag} related to the particular
-circumstance. The @T{tag} should be written inside the box and must be
-dealt with before it may be removed.
-
-If all @T{hit boxes} are filled in, then the character is ``down'' and
-the direction of the adventure or campaign should change to address
-the problem.
-
-@bold{Example:} Tom blasts the crystal with his laser vision, but the
-heat blast bounces off, hitting him in the eye, and blinding him. Tom
-writes ``blind'' in one of his hit boxes.
-
-@bold{Example:} Oscar opens the chest to reveal a viewing portal into
-the Unseen Darkness where he sees The Undying One. The sight corrupts
-Oscar's psyche and he writes ``neurotic'' in one of his hit boxes.
 
 @subsection{Basic Mechanic}
 
@@ -204,6 +141,79 @@ commit to each action.
 the players strategically, because non-@T{lead} contestants have their
 card randomly chosen.
 
+@subsection{Lead Statistics}
+
+Each @T{lead} has a few mechanical concepts associated with them:
+@T{attributes}, @T{hit box}es, and XXX.
+
+@subsubsection{Attributes}
+
+@; XXX Add qualities to list
+
+@ack["https://www.kickstarter.com/projects/matthewjhanson/the-fastest-rpg-ive-ever-played-abstract-dungeon"]{Abstract Dungeon}
+
+A @T{lead} has four @DT{attributes}, which are each associated with various
+actions and qualities and a @T{suit} in the @T{deck}:
+
+@tabular[
+#:style 'boxed
+#:sep @hspace[2]
+#:column-properties '(center center left)
+#:row-properties '(bottom-border ())
+(list
+ (list @bold{Attribute} @bold{Suit} @bold{Actions and Qualities})
+ (list @t{@DT{Toughness}}
+       @t{@card{Clubs}}
+       @t{Bend, Absorb, Pry, Throw, Hack, Slash, Flex,
+Endure, Break, Bust, Jump, Climb, Swim, Chug, Sprint, Crush, Push,
+Pull, Lift, Carry, etc.})
+ (list @t{@DT{Agility}}
+       @t{@card{Spades}}
+       @t{Escape, Elude, Deflect, Shoot, Skewer, Dodge,
+Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick, Disarm,
+Stun, Tie, etc.})
+ (list @t{@DT{Intellect}}
+       @t{@card{Diamonds}}
+       @t{Study, Solve, Riddle, Cast, Think, Remember,
+Ponder, Deduce, Reason, Decipher, Invent, Search, Convince, Debate,
+Hypothesize, etc.})
+ (list @t{@DT{Spirit}}
+       @t{@card{Hearts}}
+       @t{Disrupt, Channel, Commune, Sense, Pray, Motivate,
+Appeal, Empathize, Persude, Intimidate, Intuit, Order, Command,
+Provoke, etc.}))
+]
+
+Each @T{attribute} has an associated @DT{lead modifier} between
+@litchar{-2} and @litchar{+2}.
+
+@subsubsection{Hit Boxes}
+
+A @T{lead} has a certain number of @DT{hit box}es, representing their
+ability to deal with adversity.
+
+When a @T{lead} fails to avoid adversity, then they fill in one @T{hit
+box} with a negative @T{tag} related to the particular
+circumstance. The @T{tag} should be written inside the box and must be
+dealt with before it may be removed.
+
+If all @T{hit box}es are filled in, then the character is ``down'' and
+the direction of the adventure or campaign should change to address
+the problem.
+
+@bold{Example:} Tom blasts the crystal with his laser vision, but the
+heat blast bounces off, hitting him in the eye, and blinding him. Tom
+writes ``blind'' in one of his hit boxes.
+
+@bold{Example:} Oscar opens the chest to reveal a viewing portal into
+the Unseen Darkness where he sees The Undying One. The sight corrupts
+Oscar's psyche and he writes ``neurotic'' in one of his hit boxes.
+
+@ack["http://www.story-games.com/forums/discussion/21322/unplayable-fantasy-pbta-fictional-harm-system"]{Fictional Harm System}
+@ack["http://www.story-games.com/forums/discussion/19273/a-descriptive-damage-hack-for-dungeon-world-world-of-dungeons/p1"]{Descriptive Damage Hack for Dungeon World}
+@ack["https://plus.google.com/100410765634052727875/posts/hDTESC3RDA2"]{Addramyr Palinor
+'s Google+ post}
+
 @subsection{Modifiers}
 
 XXX lead modifiers
@@ -216,7 +226,7 @@ XXX
 
 XXX attributes
 XXX tags
-XXX hit boxes (short-term, long-term, etc)
+XXX hit boxes (short-term, long-term, etc) [2 to 4-ish]
 
 @bold{Variant Note:} The system above is tuned for representing
 short-term adversity, like damage and fighting spirit. If instead you
@@ -281,4 +291,16 @@ XXX
 
 @section{Acknowledgments}
 
-XXX
+@(define ACKS empty)
+@(define (ack u . t)
+(set! ACKS
+      (cons (apply link u t)
+            ACKS)))
+
+The ideas in this document are inspired by many other great RPGs:
+@(apply itemlist (map item ACKS))
+
+@ack["http://www.jwarts.com/thepoolrpg.pdf"]{The Pool RPG}
+@ack["http://www.jwarts.com/tqb.pdf"]{The Questing Beast}
+@ack["http://www.dungeon-world.com"]{Dungeon World}
+@ack["https://www.reddit.com/r/DungeonWorld/comments/76uu6z/we_are_proud_to_announce_worlds_of_adventure/"]{Worlds of Adventure}
