@@ -24,20 +24,28 @@ creativity in general.
 @section{Mechanics}
 
 A @DT{play group} is a @T{gamemaster} and multiple @T{leads}
-controlled by @DT{players}. A @DT{lead} is an important fictional
-character controlled by a human @T{player}. The @DT{gamemaster} (or
-@DT{GM}) controls the rest of the universe and adjudicates between
-@T{leads}.
+controlled by @DT{players}. A @DT{lead} is an important character in
+the @T{fiction} controlled by a human @T{player}. The
+@DT{gamemaster} (or @DT{GM}) controls the rest of the universe and
+adjudicates between @T{leads}.
 
 The @T{play group} has a deck of normal playing cards, called the
 @DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
 pile} and the @DT{discard pile}. At the start of a play session, the
 @T{discard pile} is empty and each @T{lead} is dealt a @DT{hand} of
-@HOW-BIG-HANDs cards from the @T{draw pile}. When a @T{lead} @T{plays}
-a card, then it is put in the @T{discard pile}. When the @T{lead}'s
-@T{hand} is empty, then they draw @HOW-BIG-HANDs cards from the
-@T{draw pile}, reshuffling the @T{discard pile} as the new @T{draw
-pile} if necessary.
+@HOW-BIG-HANDs cards from the @T{draw pile}. When a @T{lead} uses a
+card, then it is put in the @T{discard pile}. When the @T{lead}'s
+@T{hand} contains fewer than two cards, then they draw up to
+@HOW-BIG-HANDs cards from the @T{draw pile}, reshuffling the
+@T{discard pile} as the new @T{draw pile} if necessary.
+
+@margin-note{By re-drawing when there is only one card left, this
+allows @T{leads} to strategically save high cards for important
+circumstances.}
+
+The @DT{suit} of the cards is relevant in play. Each @T{suit}
+corresponds to an @T{attribute} and has an @T{opposed suit} based on
+the @T{opposed attribute}.
 
 @subsection{Basic Mechanic}
 
@@ -65,11 +73,11 @@ narrate.
 On a @DT{failure}, the @T{gamemaster} chooses and narrates the
 negative results.
 
-In general, results should always flow from the fiction. The story is
-most interesting when the @T{leads} don't get their way exactly. So,
-on a success, the @T{gamemaster} should look for a way to give the
-player a hard choice of two good things out of three possibilities,
-while on a partial success, they can only choose one.
+In general, results should always flow from the @T{fiction}. The story
+is most interesting when the @T{leads} don't get their way
+exactly. So, on a success, the @T{gamemaster} should look for a way to
+give the player a hard choice of two good things out of three
+possibilities, while on a partial success, they can only choose one.
 
 There are no strict rules for what consequences are. The only
 principle is that: on a @T{success}, you get what you want with only
@@ -80,8 +88,8 @@ what you want and experience hard consequences.
 @subsection{Tests}
 
 Each test is associated with an @T{attribute} corresponding to the
-kind of action that is being performed, this is called the @T{test
-suit}.
+kind of action that is being performed, and that action's @T{suit} is
+called the @DT{test suit}.
 
 There are two variants of @DT{tests}: @T{displays}, for when one
 @T{lead} is involved, and @T{contests}, for when multiple @T{leads}
@@ -131,20 +139,21 @@ tumbling towards her.
 
 @subsubsection{Meta Notes}
 
-@bold{Strategic Note:} @T{Leads} know which cards they have already
-played and which they have not, so they have a fuzzy estimate of what
-cards they may go up against. Similarly, they have an idea of where
-their strengths and weakness lay, so they can decide how much to
-commit to each action.
+@bold{Strategic Note:} @T{Leads} know which cards have already been
+played and which have not, so they have a fuzzy estimate of what cards
+they may go up against. Similarly, they have an idea of where their
+strengths and weakness lay, so they can decide how much to commit to
+each action. Given the bias towards @card{Face} cards, they can ensure
+some kind of @T{success} when it counts.
 
 @bold{Gamemastering Note:} The @T{gamemaster} never directly opposes
-the players strategically, because non-@T{lead} contestants have their
+the players strategically, because non-@T{lead}s always have their
 card randomly chosen.
 
 @subsection{Lead Statistics}
 
-Each @T{lead} has a few mechanical concepts associated with them:
-@T{attributes}, @T{hit box}es, and XXX.
+Each @T{lead} has a few @T{mechanical} concepts associated with them:
+@T{attributes}, @T{hit box}es, and @T{tag}s.
 
 @subsubsection{Attributes}
 
@@ -152,8 +161,9 @@ Each @T{lead} has a few mechanical concepts associated with them:
 
 @ack["https://www.kickstarter.com/projects/matthewjhanson/the-fastest-rpg-ive-ever-played-abstract-dungeon"]{Abstract Dungeon}
 
-A @T{lead} has four @DT{attributes}, which are each associated with various
-actions and qualities and a @T{suit} in the @T{deck}:
+A @T{lead} has four @DT{attributes}, which are each associated with
+various actions and qualities and a @T{suit} in the @T{deck}. Each
+@T{attribute} has an @DT{opposed attribute} and an @DT{opposed suit}.
 
 @tabular[
 #:style 'boxed
@@ -161,31 +171,45 @@ actions and qualities and a @T{suit} in the @T{deck}:
 #:column-properties '(center center left)
 #:row-properties '(bottom-border ())
 (list
- (list @bold{Attribute} @bold{Suit} @bold{Actions and Qualities})
+ (list @bold{Attribute} @bold{Suit} @bold{Actions and Qualities}
+       @bold{Opposed Attribute} @bold{Opposed Suit})
+ 
  (list @t{@DT{Toughness}}
        @t{@card{Clubs}}
        @t{Bend, Absorb, Pry, Throw, Hack, Slash, Flex,
 Endure, Break, Bust, Jump, Climb, Swim, Chug, Sprint, Crush, Push,
-Pull, Lift, Carry, etc.})
+Pull, Lift, Carry, etc.}
+       @t{@T{Intellect}}
+       @t{@card{Diamonds}})
+ 
  (list @t{@DT{Agility}}
        @t{@card{Spades}}
        @t{Escape, Elude, Deflect, Shoot, Skewer, Dodge,
 Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick, Disarm,
-Stun, Tie, etc.})
+Stun, Tie, etc.}
+       @t{@T{Spirit}}
+       @t{@card{Hearts}})
+ 
  (list @t{@DT{Intellect}}
        @t{@card{Diamonds}}
        @t{Study, Solve, Riddle, Cast, Think, Remember,
 Ponder, Deduce, Reason, Decipher, Invent, Search, Convince, Debate,
-Hypothesize, etc.})
+Hypothesize, etc.}
+       @t{@T{Toughness}}
+       @t{@card{Clubs}})
+ 
  (list @t{@DT{Spirit}}
        @t{@card{Hearts}}
        @t{Disrupt, Channel, Commune, Sense, Pray, Motivate,
 Appeal, Empathize, Persude, Intimidate, Intuit, Order, Command,
-Provoke, etc.}))
+Provoke, etc.}       
+       @t{@T{Agility}}
+       @t{@card{Spades}}))
 ]
 
-Each @T{attribute} has an associated @DT{lead modifier} between
-@litchar{-2} and @litchar{+2}.
+A @T{lead} has an @DT{attribute modifier} associated with each
+@T{attribute}, which is a number between @litchar{-2} and
+@litchar{+2}.
 
 @subsubsection{Hit Boxes}
 
@@ -209,33 +233,129 @@ writes ``blind'' in one of his hit boxes.
 the Unseen Darkness where he sees The Undying One. The sight corrupts
 Oscar's psyche and he writes ``neurotic'' in one of his hit boxes.
 
+In principle, @T{hit box}es are not mechnically neccessary because the
+@T{tags} themselves are the in-@T{fiction} consequences of failure to
+deal with adversity, but they are a useful abstraction to benchmark
+failure.
+
 @ack["http://www.story-games.com/forums/discussion/21322/unplayable-fantasy-pbta-fictional-harm-system"]{Fictional Harm System}
 @ack["http://www.story-games.com/forums/discussion/19273/a-descriptive-damage-hack-for-dungeon-world-world-of-dungeons/p1"]{Descriptive Damage Hack for Dungeon World}
 @ack["https://plus.google.com/100410765634052727875/posts/hDTESC3RDA2"]{Addramyr Palinor
 's Google+ post}
 
+@subsubsection{Tags}
+
+A @DT{tag} is a statement, quality, resource, or attribute about a
+@T{lead} that separates them from normal people of the world they live
+in. Every @T{lead} has a list of @T{tag}s.
+
+For example, a @T{tag} might be ``Can cast fire magic'' or ``Expert
+computer hacker''. In the modern world, a @T{tag} would not be ``Has a
+cell phone'' or ``Knows about germs'', but these things might be
+@T{tag}s in a fantasy world.
+
+Because @T{tags} are free-form statements, they can be positive,
+neutral, negative, or any combination, depending on the circumstances.
+
+@T{Tags} can be permanent, temporary, fleeting, disposal, etc,
+depending on the particular details of the @T{fiction} and @T{setting}.
+
+In general, @T{tags} change what a @T{lead} can do and how well they
+can do it. For example, in a story about soldiers, having a rifle is
+likely not to be a @T{tag}, but ``Lost his rifle'' might be a @T{tag},
+with the effect of disallowing the @T{lead} to fire. For example, in a
+story about Greek myths, being a demigod is a @T{tag}, but speaking
+Greek is not. For example, in a fantasy story about dungeons and
+delves, having a sword might not be a @T{tag} but ``Has the mystical
+blade Vorpalice'' is a @T{tag}.
+
+@T{Tags} should have both @T{mechanical} and @T{flavor}
+significance. They should influence how success @T{leads} are, what
+they can do, and what their goals, desires, and passions are.
+
 @subsection{Modifiers}
 
-XXX lead modifiers
-XXX traits
-XXX test suit
+When a @T{lead} faces a @T{test} and plays a card, the incorporate a
+variety of @DT{modifiers} to the value of the card.
 
-XXX
+First, they incorporate the @T{test suit} of the action. If the
+@T{suit} of the card played matches the @T{test suit}, then a
+@litchar["+1"] modifier is applied. If the @T{suit} of the card played
+matches the @T{opposed suit} of the @T{test suit}, then a
+@litchar["-1"] modifier is applied.
 
-@subsection{Character Creation}
+@bold{Example:} Alexa tries to sneak past the guards on her way into
+the mansion. She plays a @card{Ten of Spades}, so it is equivalent to
+a @card{Jack of Spades}, because @card{Spades} is the @T{test suit} of
+sneaking. Thus, a @T{partial} is guaranteed, because she plays
+a @card{Face} card.
 
-XXX attributes
-XXX tags
-XXX hit boxes (short-term, long-term, etc) [2 to 4-ish]
+Second, they incorporate the @T{attribute modifier} of the action.
 
-@bold{Variant Note:} The system above is tuned for representing
-short-term adversity, like damage and fighting spirit. If instead you
-wish to represent long-term adversity, like general health and mental
-wellness, you will want to tweak the scale.
+@bold{Example:} Stewart tries to decipher the ancient writing. He
+plays a @card{Queen of Clubs}, but it is considerate as a @card{Ten of
+Clubs}, because it is in the @T{opposed suit} and he has a
+@litchar["-1"] @T{attribute modifier} for @T{Intellect}. Thus, his
+is not guaranteed a @T{partial}.
+
+Third, they incorporate any applicable @T{tags}. A @T{tag} may imply
+that an action is easier or harder for the @T{lead}. If it is easier,
+then a @litchar["+1"] modifier is applied. If it is harder, then a
+@litchar["-1"] modifier is applied.
+
+@bold{Example:} Elizabeth tries to commune with the ghost of The
+Jackal. She plays a @card{Queen}, but because she possesses the @T{tag},
+``Speaker for the dead'', it is as though she played a @card{King} and
+her @T{success} is guaranteed.
+
+@subsection{Lead Creation}
+
+When you create a @T{lead}, you should start by defining the @T{flavor} of
+the character. Then, select the following @T{mechanical} details:
+
+@itemlist[#:style 'ordered
+
+@item{@T{Attribute modifiers} --- Choose a modifier for each
+@T{attribute}. They should total to @litchar["+0"] for a low-power
+story, @litchar["+1"] for a high-power story, and @litchar["+2"] for
+an epic story.}
+
+@item{@T{Hit box}es --- Choose a number between @litchar["2"] and
+@litchar["4"]. A normal person would have @litchar["1"], but @T{leads}
+are typically exceptional, so a weaker @T{lead} still has
+@litchar["2"]. Someone truly sturdy has @litchar["4"].}
+
+@item{@T{Tags} --- Choose a few @T{tags}, focusing mainly on positive
+or generally descriptive ones. Add one or two negative @T{tags}.  You
+should have one or two for your @T{archetype} and @T{background}, one
+or two for a special quality, and one or two for any special
+resources.}
+
+]
+
+@bold{Example:} Sally Summers is the Zombie Slayer, an mythical role
+filled each generation by one teenage girl in all the world. She
+fights with the enchanted whip, @italic{Lightbringer}, and has a
+mystical connection to the spirits of past Slayers. Her attribute
+modifiers are @litchar["+1"] @T{Toughness}, @litchar["+0"]
+@T{Agility}, @litchar["+0"] @T{Intellect}, and @litchar["+0"]
+@T{Spirit}. She has @litchar["3"] @T{hit box}es. Her initial @T{tags}
+are, ``The Zombie Slayer'', ``Possesses @italic{Lightbringer}'',
+``High school girl'', ``Prideful'', and ``Mystic knowledge from past
+lives''.
+
+@bold{Variant Note:} The @T{hit box} suggestion above is tuned for
+representing short-term adversity, like damage and fighting spirit. If
+instead you wish to represent long-term adversity, like general health
+and mental wellness, you will want to tweak the scale. You want to
+have both kinds of @T{hit box}es, although normally long-term
+adversity shows up in the form of @T{tags}.
 
 @subsection{Actions}
 
 XXX
+
+XXX consequences --- get a tag, lose a tag, lose a hitbox
 
 @subsection{Combat}
 
@@ -250,11 +370,16 @@ defensive / carry
 + Simultaneous combat (with cards) --- establish defenses, attacks,
    ranges, etc --- then resolve
 
+range = close, neutral, far or threatened, not, distant, etc
+
 commit card during combat
 
 @section{Flavor}
 
 @subsection{Settings}
+
+@DT{Archetype}
+@DT{Background}
 
 XXX Look at other ideas and write down example classes/rolls/etc.
 
@@ -284,6 +409,13 @@ XXX
 @section{Advice}
 
 XXX
+
+You can play without a @T{gamemaster} by collaboratively filling their
+role: any time you feel the need for a @T{gamemaster}, have the person
+to the left of the @T{lead} in focus act as one temporarily. If you
+remember to share the spotlight and respect each other, then it should
+go smoothly. The major downside is that there will not be secretly
+planned plot twists... or will there?
 
 @section{Resources}
 
