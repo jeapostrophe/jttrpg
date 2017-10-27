@@ -21,13 +21,39 @@ creativity in general.
 
 @table-of-contents[]
 
-@section{Mechanics}
+@section{Basics}
+
+This is a game wherein a group of @T{players} (the @T{play group})
+collaborately tell a story (called the @T{fiction}) using
+@T{mechanical} rules to adjudicate creative disputes and direct the
+story in an unexpected direction.
+
+This document refers to the story as the @DT{fiction}. In this game,
+the @T{fiction} is the most important part. It is the place where the
+action and fun takes place. The @T{play group} should try to be true
+to the @T{fiction} at all times and keep it on the front of their
+minds. The world of @T{fiction} is called the @DT{flavor} and all
+aspects of the @T{fiction} that are not directly @T{mechanical} are
+referred to as @T{flavor}.
+
+The @DT{mechanical} rules are the particular rules of the game having
+to do with number, cards, statistics, and so on. They exist to
+adjudicate disputes between members of the @T{play group}, such as
+when one @T{player} wants the hero to save the damsel and another
+@T{player} wants the damsel to have already defeated the monster. They
+also exist to introduce unexpected happenings in the story, so that
+the @T{play group} can discover what happens in the @T{fiction}
+through play.
 
 A @DT{play group} is a @T{gamemaster} and multiple @T{leads}
 controlled by @DT{players}. A @DT{lead} is an important character in
 the @T{fiction} controlled by a human @T{player}. The
 @DT{gamemaster} (or @DT{GM}) controls the rest of the universe and
 adjudicates between @T{leads}.
+
+@section{Mechanics}
+
+This section explains the @T{mechanical} rules.
 
 The @T{play group} has a deck of normal playing cards, called the
 @DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
@@ -47,7 +73,7 @@ The @DT{suit} of the cards is relevant in play. Each @T{suit}
 corresponds to an @T{attribute} and has an @T{opposed suit} based on
 the @T{opposed attribute}.
 
-@subsection{Basic Mechanic}
+@subsection[#:tag "bm"]{Basic Mechanic}
 
 The @DT{basic mechanic} is for a @T{lead} to describe their action. If
 the action could be done by any normal person in the circumstances,
@@ -157,8 +183,6 @@ Each @T{lead} has a few @T{mechanical} concepts associated with them:
 
 @subsubsection{Attributes}
 
-@; XXX Add qualities to list
-
 @ack["https://www.kickstarter.com/projects/matthewjhanson/the-fastest-rpg-ive-ever-played-abstract-dungeon"]{Abstract Dungeon}
 
 A @T{lead} has four @DT{attributes}, which are each associated with
@@ -176,33 +200,33 @@ various actions and qualities and a @T{suit} in the @T{deck}. Each
  
  (list @t{@DT{Toughness}}
        @t{@card{Clubs}}
-       @t{Bend, Absorb, Pry, Throw, Hack, Slash, Flex,
-Endure, Break, Bust, Jump, Climb, Swim, Chug, Sprint, Crush, Push,
-Pull, Lift, Carry, etc.}
+       @t{Strength, Vitality, Constitution, Bend, Absorb, Pry, Throw,
+Hack, Slash, Flex, Endure, Break, Bust, Jump, Climb, Swim, Chug,
+Sprint, Crush, Push, Pull, Lift, Carry, etc.}
        @t{@T{Intellect}}
        @t{@card{Diamonds}})
  
  (list @t{@DT{Agility}}
        @t{@card{Spades}}
-       @t{Escape, Elude, Deflect, Shoot, Skewer, Dodge,
-Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick, Disarm,
-Stun, Tie, etc.}
+       @t{Dexterity, Finesse, Escape, Elude, Deflect, Shoot, Skewer,
+Dodge, Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick,
+Disarm, Stun, Tie, etc.}
        @t{@T{Spirit}}
        @t{@card{Hearts}})
  
  (list @t{@DT{Intellect}}
        @t{@card{Diamonds}}
-       @t{Study, Solve, Riddle, Cast, Think, Remember,
-Ponder, Deduce, Reason, Decipher, Invent, Search, Convince, Debate,
-Hypothesize, etc.}
+       @t{Intelligence, Insight, Study, Solve, Riddle, Cast, Think,
+Remember, Ponder, Deduce, Reason, Decipher, Invent, Search, Convince,
+Debate, Hypothesize, etc.}
        @t{@T{Toughness}}
        @t{@card{Clubs}})
  
  (list @t{@DT{Spirit}}
        @t{@card{Hearts}}
-       @t{Disrupt, Channel, Commune, Sense, Pray, Motivate,
-Appeal, Empathize, Persude, Intimidate, Intuit, Order, Command,
-Provoke, etc.}       
+       @t{Wisdom, Charisma, Disrupt, Channel, Commune, Sense, Pray,
+Motivate, Appeal, Empathize, Persude, Convince, Intimidate, Intuit,
+Order, Command, Provoke, etc.}
        @t{@T{Agility}}
        @t{@card{Spades}}))
 ]
@@ -258,7 +282,8 @@ Because @T{tags} are free-form statements, they can be positive,
 neutral, negative, or any combination, depending on the circumstances.
 
 @T{Tags} can be permanent, temporary, fleeting, disposal, etc,
-depending on the particular details of the @T{fiction} and @T{setting}.
+depending on the particular details of the @T{fiction} and
+@T{setting}.
 
 In general, @T{tags} change what a @T{lead} can do and how well they
 can do it. For example, in a story about soldiers, having a rifle is
@@ -353,28 +378,64 @@ adversity shows up in the form of @T{tags}.
 
 @subsection{Actions}
 
-XXX
+There are no strict rules for @DT{actions}. In general, describe the
+activity in the @T{fiction}, then apply the @secref["bm"] and think
+critically about what @T{attribute} is appropriate and what @T{tags}
+apply.
 
-XXX consequences --- get a tag, lose a tag, lose a hitbox
+The @T{consequences} of @T{tests} may have @T{mechanical} impacts. In
+particular, it is common that a @T{consequence} is to gain or lose a
+@T{tag} or to fill in a @T{hit box}.
+
+@bold{Example:} Sarai fails to convince the border guards of her
+identity, so her supplies are stolen and she is forced back into the
+wilderness. She adds the ``Basic goods stolen'' @T{tag}. (She did not
+have ``Possesses basic goods'' before because this can be assumed. The
+unique circumstance is missing these things.) Later, when she visits a
+frontier town and works for the tavern, she removes this @T{tag}
+because she is back on her feet.
+
+@bold{Example:} Joffrey fires a flurry of arrows at the approaching
+vampire horde, but fails miserably. He adds the @T{tag}, ``No more
+arrows'', and thus can no longer use his long bow.
+
+Inside of single scenes and stories, it should be common to introduce
+and remove @T{tag}s for all of the @T{lead}s.
+
+XXX Action ideas from other games
 
 @subsection{Combat}
 
-XXX
+There is no need to treat combat encounters and combat actions
+differently than other scenes and @T{actions}. However, if your
+@T{play group} wants something slightly more @T{mechanical}, use the
+ideas in this section.
 
-ammo
+@bold{Initiative.} At the beginning of a combat scenario, have each
+@T{lead} use a card that represents their readiness for the fight
+and (potentially) draw cards for non-@T{lead} participants. The
+relative ranking of the cards will determine the order in which
+subsequents actions take place.
 
-defensive / carry
+@bold{Preparation.} Use the @bold{Initiative} card as a constant
+@T{modifier} throughout the battle: Add it to all cards that are used.
 
--- battlefield - abstract like makeyou kingdom
-
-+ Simultaneous combat (with cards) --- establish defenses, attacks,
-   ranges, etc --- then resolve
-
-range = close, neutral, far or threatened, not, distant, etc
-
-commit card during combat
+@bold{Range.} As an in between point to a purely verbal battleground
+and the highly detailed miniature-oriented play of a board game, use
+an abstracted battleground with abstract areas like, @italic{Close
+Quarters}, @italic{Behind}, @italic{Flanking}, @italic{The Fray},
+@italic{In The Distance} etc. Use @T{actions} to move from one to
+another. Make it impossible to use @T{actions} on targets in distant
+areas. Give a @litchar["-1"] @T{modifier} for using @T{actions} in
+adjacent areas.
 
 @section{Flavor}
+
+This section gives advice on choosing the @T{flavor} of the
+@T{fiction}. There are no strict rules here, so just be inspired and
+have fun.
+
+XXX explain each category
 
 @subsection{Settings}
 
@@ -401,7 +462,7 @@ XXX
 
 XXX
 
-@subsection{Adventures}
+@subsection{Stories}
 
 XXX
 
