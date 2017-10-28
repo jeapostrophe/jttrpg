@@ -435,9 +435,38 @@ This section gives advice on choosing the @T{flavor} of the
 @T{fiction}. There are no strict rules here, so just be inspired and
 have fun.
 
-XXX explain each category
+We divide our discuss into four sections:
+@itemlist[#:style 'ordered
 
-@subsection{Settings}
+@item{@secref["flav-set"] --- The world in which the @T{fiction} takes
+place.}
+
+@item{@secref["flav-char"] --- The @T{lead} characters of the
+@T{fiction}.}
+
+@item{@secref["flav-camp"] --- The overall narrative of the entire
+@T{fiction} that stretches across all of the occasions the @T{play
+group} meets.}
+
+@item{@secref["flav-stories"] --- The narratives of each individual
+session of play.}
+
+]
+
+@bold{Advice:} I recommend thinking about the @T{flavor} in this
+order, but it is not strictly necessary. I normally start a new
+@T{play group} with a discussion of what kind world they want to play
+in. Then, we talk about who the stars of the story (@T{leads})
+are. Next, we think about the overall kind of story we want to
+create. Then I start thinking about what each of the component stories
+will be.
+
+@subsection[#:tag "flav-set"]{Settings}
+
+@bold{Style.} What style of world is it?
+Fantastic. Silly. Gritty. Realistic. Optimistic. Pessimistic.
+
+@bold{Period.} When does the @T{fiction} take place?
 
 @DT{Archetype}
 @DT{Background}
@@ -454,15 +483,15 @@ Western
 Dystopia
 High School+ - Monsters, Vampires, Super Hero, Aliens, Chosen One, Magical Girl
 
-@subsection{Campaigns}
+@subsection[#:tag "flav-char"]{Characters}
 
 XXX
 
-@subsection{Characters}
+@subsection[#:tag "flav-camp"]{Campaigns}
 
 XXX
 
-@subsection{Stories}
+@subsection[#:tag "flav-stories"]{Stories}
 
 XXX
 
