@@ -279,7 +279,8 @@ cell phone'' or ``Knows about germs'', but these things might be
 @T{tag}s in a fantasy world.
 
 Because @T{tags} are free-form statements, they can be positive,
-neutral, negative, or any combination, depending on the circumstances.
+neutral, negative, or any combination, depending on the
+circumstances. Avoid very vague @T{tags} and try to be specific.
 
 @T{Tags} can be permanent, temporary, fleeting, disposal, etc,
 depending on the particular details of the @T{fiction} and
@@ -297,6 +298,8 @@ blade Vorpalice'' is a @T{tag}.
 @T{Tags} should have both @T{mechanical} and @T{flavor}
 significance. They should influence how success @T{leads} are, what
 they can do, and what their goals, desires, and passions are.
+
+XXX gain occasionally
 
 @subsection{Modifiers}
 
@@ -352,9 +355,8 @@ are typically exceptional, so a weaker @T{lead} still has
 
 @item{@T{Tags} --- Choose a few @T{tags}, focusing mainly on positive
 or generally descriptive ones. Add one or two negative @T{tags}.  You
-should have one or two for your @T{archetype} and @T{background}, one
-or two for a special quality, and one or two for any special
-resources.}
+should have one or two for your archetype and background, one or two
+for a special quality, and one or two for any special resources.}
 
 ]
 
@@ -463,42 +465,101 @@ will be.
 
 @subsection[#:tag "flav-set"]{Settings}
 
+I normally start by picking an existing work of fiction that I want to
+start from and going from there. Other times, I like to answer a
+serious of questions that describe the contours of the world.
+
 @bold{Style.} What style of world is it?
-Fantastic. Silly. Gritty. Realistic. Optimistic. Pessimistic.
+Fantastic. Silly. Gritty. Realistic. Optimistic. Pessimistic. Mythic.
 
 @bold{Period.} When does the @T{fiction} take place?
+Jurassic. Modern. Old West. Futuristic. Medieval. Dark Ages. Bronze
+Age. Mythic. Iron Age. Space-Age. Age of Sail. Cold War.
 
-@DT{Archetype}
-@DT{Background}
+@bold{Special Qualities.} What are some special things about the
+world? Super Heroes. Post-apocalypse. Dystopia. Magic. Time-travel.
+Zombies. Dinosaurs. Vampires. Aliens. Monsters. Points-of-Light. Talking
+Animals.
 
-XXX Look at other ideas and write down example classes/rolls/etc.
-
-Fantasy - High, Low, Tolkien, Dark, Gritty, From-the-Farmers, Point-of-Light
-Medieval - Arthurian, Westeros, Realistic
-Modern - Spy, Crime, Heist, Zombies
-SciFi - Star Wars, Star Trek, Firefly
-Super Heroes
-Post-apocalypse
-Western
-Dystopia
-High School+ - Monsters, Vampires, Super Hero, Aliens, Chosen One, Magical Girl
+@bold{Scale.} What is the scale of the world that the @T{fiction}
+takes place in? Small town. City. High school. Colony
+Ship. Planet. Continent. Country. Galaxy.
 
 @subsection[#:tag "flav-char"]{Characters}
 
-XXX
+The most important part of the @T{fiction} is the characters and the
+setting just exists to place them on a canvas. When coming up with
+characters, think about a few different things:
+
+@bold{Archetype.} What story archetype do they fulfill? The Chosen
+One. The Outsider. The White Knight. The Dark Prince.
+
+@bold{Background.} Where do they come from? A small town. The royal
+family. The best school. An orphan. From another place.
+
+@bold{Code.} What standards to they uphold as a guiding force in their
+life? Uphold the law. Never lie. Family. Duty. Honor. Survival of the
+fittest. Loyalty.
+
+@bold{Motivation.} What motivates their actions in the story? What do
+they quest for? Revenge. Glory. Honor. Duty. An ancient
+artifact. Family. Love.
+
+@bold{Job.} What is their job? Police officer. Scientist. Solider. Cook.
+Researcher. Librarian. Advisor. Diplomat. Trader. Guard. Knight. Retail.
+
+@bold{Training.} What special training do they have?
+Weapons. Science. Magic. Computers. Research. Geography. Animals.
 
 @subsection[#:tag "flav-camp"]{Campaigns}
 
-XXX
+Once you know the world that you are in, you should determine the
+whole story of the @T{fiction}. I like to think of the campaign as a
+season of a TV show. Here are some ideas.
+
+@bold{War.} There is a war that has started or will star and the
+@T{lead}s need to do something to stop it, win it, turn the tables,
+etc.
+
+@bold{Exploration.} The world is much bigger than the @T{lead}s
+realized and they are driven to explore it and see the undiscovered
+country.
+
+@bold{Quest for the.} There is some important artifact in the world
+that must be found, acquired, used, or brought to safety. Do they know
+where it is? Do they know what it is?
+
+@bold{Hero's Journey.} The @T{lead}s must leave comfort and undergo
+trials before they return.
+
+@bold{The Big Bad on the Horizon.} There is a big bad on the horizon
+that must be prepared for and stopped.
 
 @subsection[#:tag "flav-stories"]{Stories}
 
-XXX
-
+Your campaign is many of many stories. I like to plan a few key
+moments and the kinds of things that need to happen, then let the
+@T{fiction} lead some place interesting. If the campaign is a season
+of a TV show, then each story is an episode. Most episodes will be
+self-contained, but push the greater arc of the story too. Think about
+having ``specials'' that incorprate interesting and different styles
+as you go.
 
 @section{Advice}
 
-XXX
+This section has a smattering of advice across the whole play
+experience.
+
+@subsection{Roleplaying Tips}
+
+Have focus and keep to the point of the moment of narration. Be
+concise and let others play.
+
+Respect the other @T{lead}s and don't alter their behavior
+significantly from their established patterns.
+
+Stay consistency with the setting, campaign, and established parts of
+the story. Occasionally a ret-con or plot-twist is appropriate.
 
 You can play without a @T{gamemaster} by collaboratively filling their
 role: any time you feel the need for a @T{gamemaster}, have the person
@@ -507,9 +568,33 @@ remember to share the spotlight and respect each other, then it should
 go smoothly. The major downside is that there will not be secretly
 planned plot twists... or will there?
 
-@section{Resources}
+@subsection{Campaigns}
+
+XXX hero's journey
+XXX mcguffin
+
+@subsection{Stories}
+
+XXX clues
+XXX resources
+XXX gain a tag
+
+@subsection{Characters}
+
+Use what other roleplaying games call ``classes'' to inspire your
+characters. Here's a huge number of ideas:
+
+Knight. Lady. Knight-at-heart. Troubled Princess. Sorceress. Peaceful
+Monk. Daughter of the Earth.
+
+Barbarian. Spy. 
 
 XXX
+
+@section{Resources}
+
+XXX character sheet
+XXX rule quick reference
 
 @section{Acknowledgments}
 
