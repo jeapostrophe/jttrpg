@@ -1,5 +1,6 @@
 #lang scribble/base
 @(require racket/list
+          racket/string
           scribble/manual)
 
 @(begin
@@ -8,7 +9,36 @@
    (define T tech)
    (define HOW-BIG-HAND 5)
    (define HOW-BIG-HANDs "five")
-   (define card bold))
+   (define card bold)
+
+   (define (force-n n l def)
+     (append l (make-list (- n (length l)) def)))
+   
+   (define (chunk n def xs)
+     (let loop ([r (list empty)] [i n] [xs xs])
+       (cond
+         [(empty? xs) (reverse (cons (force-n n (first r) def)
+                                     (rest r)))]
+         [(zero? i) (loop (cons empty r) n xs)]
+         [else
+          (loop (cons (cons (first xs) (first r))
+                      (rest r))
+                (sub1 i)
+                (rest xs))])))
+
+   (define (sentence-table num . content)
+     (define sents
+       (sort (filter-map
+              (λ (x)
+                (define r (regexp-replace #rx" *$" (regexp-replace #rx"^ *" x "") ""))
+                (and (not (string=? "" r)) r))
+              (string-split (string-join (flatten content)) "."))
+             string<=?))
+     (tabular #:style 'boxed
+              #:sep (hspace 2)
+              #:column-properties '(left)
+              #:row-properties '(bottom-border)
+              (chunk num "" sents))))
 
 @title{JTTRPG}
 @author{@author+email["Jay McCarthy" "jay.mccarthy@gmail.com"]}
@@ -226,7 +256,7 @@ Debate, Hypothesize, Heal, etc.}
        @t{@card{Hearts}}
        @t{Wisdom, Charisma, Disrupt, Channel, Commune, Sense, Pray,
 Motivate, Appeal, Empathize, Persude, Convince, Intimidate, Intuit,
-Order, Command, Provoke, Seduce, Manipulate, Barter, etc.}
+Order, Command, Provoke, Seduce, Manipulate, Barter, Sanity, etc.}
        @t{@T{Agility}}
        @t{@card{Spades}}))
 ]
@@ -485,6 +515,13 @@ Animals.
 takes place in? Small town. City. High school. Colony
 Ship. Planet. Continent. Country. Galaxy.
 
+@bold{Genres.} Does the @T{fiction} fit an existing genre? High
+fantasy. Comic fantasty. Contemporary fantasy. Spiritual fantasy. Bug
+hunt. Space
+opera. Weird. Horror. Pulp. Slasher. Baroque. Supernatural. Ghost
+stories. Mystery. Espionage. War. Western. Martial
+Arts. Egyptian. Ancient Greece.
+
 @subsection[#:tag "flav-char"]{Characters}
 
 The most important part of the @T{fiction} is the characters and the
@@ -579,6 +616,9 @@ XXX hero's journey
 XXX mcguffin
 XXX when to gain a tag
 
+XXX Overcoming the Monster, Rags to Riches, The Quest, Voyage and
+Return, Comedy, Tragedy, Rebirth,
+
 @subsection{Stories}
 
 XXX clues
@@ -615,7 +655,10 @@ Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
 Oracle. Charismatic Warrior. Charming Champion. Unrelenting
 Good. Adorable Wild Child. Feral Weirdo. Noble
 Druid. Shape-shifter. Fragile Rock Star. Prissy Minstrel. Unrelenting
-Bard. Dragon Master. Guardian Angel.  }
+Bard. Dragon Master. Guardian Angel. Magitek
+Knight. Professor. Martial Artist. Monk. Karate
+Fighter. Inventor. Kung Fu Warrior. Magic Knight. Blue Mage. Red
+Mage. White Mage. Black Mage. Beastmaster. Wilding. Fearless Leader. }
 
 Use these tropes to come up with your character concept, as well as
 your initial set of @T{tags}. You can also think about unique items
@@ -664,6 +707,26 @@ guidance. They owe you for saving their life. Your holy quest is to
 find it. They are in great danger. You protected them when they were
 stranded. You know the legend of their past or future. }
 
+Another way to think about your character is the dramatic situation
+they find themselves in. This can define the character, a story, or
+even the whole campaign.
+
+@sentence-table[2]{
+Supplication. Crime Pursued By
+Vengeance. Pursuit. Obtaining. Self-sacrifice For An
+Ideal. Deliverance. Daring Enterprise. Returners. Abduction. The
+Engima. Recovery of a Lost One. Vengeance Taken For Kin Upon
+Kin. Enmity of Kin. Rivalry of Kin. Slayer of Kin
+Unrecognized. Self-sacrifice for Kin. Necessity of Sacrificing Loved
+Ones. Discovery of the Dishonour of a Loved One. Loss of Loved
+Ones. Disaster. Revolt. Rivalry of Superior vs
+Inferior. Ambition. Conflict with a God. Fallying Prey to
+Misfortune. Madness. Fatal Imprudence. Erroneous
+Judgement. Remorse. Murderous Adultery. Involuntary Crimes of
+Love. Sacrifice for Passion. Adultery. Crimes of Love. Obstacles to
+Love. An Enemy Loved. Mistaken Jealousy.
+}
+
 @subsection{Consequences}
 
 The @T{gamemaster} should try to use @T{failure} to spin new ideas
@@ -680,6 +743,10 @@ or replace something they have. }
 When @T{leads} take @T{actions}, it is more interesting to give the
 @T{player} hard choices for how to put their @T{consequences} into the
 @T{fiction}. Here are some templates for different kind of actions:
+
+@(define (action what fail-o partial-o succ-o [opts #f])
+   "XXX")
+@(define (actions . x) "XXX")
 
 @actions[
 @action["Resist Temptation"
@@ -740,6 +807,7 @@ When @T{leads} take @T{actions}, it is more interesting to give the
 
 XXX character sheet
 XXX rule quick reference
+XXX abstract battle map
 
 @section{Acknowledgments}
 
@@ -759,10 +827,7 @@ The ideas in this document are inspired by many other great RPGs:
 @ack["XXX"]{Apocalypse World}
 @ack["XXX"]{Beyond the Wall}
 @ack["XXX"]{Dragon World}
-
-XXX Make You Kingdom
-
-XXX No Dice
+@ack["XXX"]{No Dice RPG}
 
 XXX Savage worlds
 
@@ -770,3 +835,4 @@ XXX Worlds of Adventure
 
 XXX Dungeon World
 
+XXX Final Fantasy and Dragon Quest jobs
