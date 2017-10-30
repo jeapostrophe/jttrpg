@@ -55,8 +55,6 @@ adjudicates between @T{leads}.
 
 This section explains the @T{mechanical} rules.
 
-XXX Jokers
-
 The @T{play group} has a deck of normal playing cards, called the
 @DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
 pile} and the @DT{discard pile}. At the start of a play session, the
@@ -301,7 +299,9 @@ blade Vorpalice'' is a @T{tag}.
 significance. They should influence how success @T{leads} are, what
 they can do, and what their goals, desires, and passions are.
 
-XXX gain occasionally
+Periodically throughout play, new @T{tags} should be given. They
+should be positive and negative @T{consequences} for individual
+actions, as well as a result of pivotal story moments.
 
 @subsection{Modifiers}
 
@@ -564,6 +564,8 @@ the story. Occasionally a ret-con or plot-twist is appropriate.
 Use a timer sometimes to make a moment tense and give the @T{leads}
 only a short time to react.
 
+Whenever you draw a @card{Joker}, have something unexpected happen!
+
 You can play without a @T{gamemaster} by collaboratively filling their
 role: any time you feel the need for a @T{gamemaster}, have the person
 to the left of the @T{lead} in focus act as one temporarily. If you
@@ -575,6 +577,7 @@ planned plot twists... or will there?
 
 XXX hero's journey
 XXX mcguffin
+XXX when to gain a tag
 
 @subsection{Stories}
 
@@ -587,11 +590,12 @@ XXX gain a tag
 Use what other roleplaying games call ``classes'' to inspire your
 characters. Here's a huge number of ideas:
 
-Knight. Lady. Knight-at-heart. Troubled Princess. Sorceress. Peaceful
-Monk. Daughter of the Earth.  Barbarian. Spy. Angel. Battle
+@sentence-table[4]{ Knight. Lady. Knight-at-heart. Troubled
+Princess. Sorceress. Peaceful Monk. Daughter of the Earth.
+Barbarian. Spy. Angel. Battle
 Babe. Brainer. Chopper. Driver. Hardholder. Gunlugger. Gunslinger. Hocus. Techie. Skinner. Operator. Healer. Warrior. Weapon
-Expert. Rogue. Jack of All
-Trades. Mage. High-born. Low-born. Mystic. Devout Acolyte. Errant
+Expert. Rogue. Jack of All Trades. Mage. High-born. Slayer. Vampire
+Killer. Chosen One. Low-born. Mystic. Devout Acolyte. Errant
 Occultist. Magician's Apprentice. Adventurer. Rune
 Caster. Ranger. Vagabound. Outrider. Dragoon. Performer. Future
 Warlord. Forgotten Child. Novice Templar. Gifted Dilettante. Noble's
@@ -611,79 +615,73 @@ Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
 Oracle. Charismatic Warrior. Charming Champion. Unrelenting
 Good. Adorable Wild Child. Feral Weirdo. Noble
 Druid. Shape-shifter. Fragile Rock Star. Prissy Minstrel. Unrelenting
-Bard. Dragon Master. Guardian Angel.
+Bard. Dragon Master. Guardian Angel.  }
 
-XXX
+Use these tropes to come up with your character concept, as well as
+your initial set of @T{tags}. You can also think about unique items
+and attributes as another axis of @T{tags}. Here are some ideas:
 
-Ideas for unique tags:
+@sentence-table[4]{ Magical Sense. Sword of Pure Darkness. Vanish into
+another Dimension. Earth Gadget. Future Tech. Item out of
+Time. Knowledge out of Time. Mysterious Power. Seedy
+Connections. Legendary Sword. Oblivious to Manipulation. Special
+Insight. Magical Little Friend. Flight. Great Store of Wealth. Fire
+Breath. Ridiculously Strong. Ridiculously Old. Squad of
+Retainers. Divine Visions. Healing Touch. Royal Privilege. Magical
+Horse. Speak to Animals. Commune with Spirits. Has a Guardian
+Angel. Haunted. Hunted. Unique Cybersuit.  }
 
-Magical Sense. Sword of Pure Darkness. Vanish into another
-Dimension. Earth Gadget. Future Tech. Item out of Time. Knowledge out
-of Time. Mysterious Power. Seedy Connections. Legendary
-Sword. Oblivious to Manipulation. Special Insight. Magical Little
-Friend. Flight. Great Store of Wealth. Fire Breath. Ridiculously
-Strong. Ridiculously Old. Squad of Retainers. Divine Visions. Healing
-Touch. Royal Privilege. Magical Horse. Speak to Animals. Commune with
-Spirits. Has a Guardian Angel. Haunted. Hunted.
+A further way to create interesting characters is to connect them to
+each other and other people out in the world. Here are some ideas:
 
-XXX
-
-Make connections between the characters and other people in the world:
-
-They accidentally summoned you. You are siblings. You were friends as
-kids. They have a crush on you. They have a magical artifact that
-affects you. They are actually your parent. They killed your family
-member. A dark power sent you to them. You trained together. You are
-secretly buddies but publicly enemies. You were lovers. You are
-obssessed with them. You were set up with them, but…. They brought you
-out of the darkness. A dark power is after them and only you
-know. They showed up on Earth and are responsible for what happened to
-you. They took something from you. You had to find them to save the
-world. They welcomed you when you came here for the first time. They
-helped you do something shady once. They are convinced you stole
-something from them. If you don't steal it, someone will come after
-you. They are your rival. You've been through thick and thin
-together. They constantly undermine you. They know about your true
-destiny, but you don't. They want you to cast the final ritual. They
-were apprenticed with you, but weren't as good as you. You
-accidentally blew something up important to them. They fear you will
-interfer with their plans. Your parents asked them to take care of
-you. You are hopelessly in love with them. They served you in the last
-war. You must acquire it at all costs. You were supposed to receive
-it, but it was denied. They are your biggest fan. You know you must
-protect them. They are wrong and need to know it. You were commanded
-to do something you don't want. What you believe is wrong. They are
-your sworn protector. They are destined to sacrifice you. You need it
-to fulfill your destiny. They need your guidance. They owe you for
-saving their life. Your holy quest is to find it. They are in great
-danger. You protected them when they were stranded. You know the
-legend of their past or future.
-
-XXX
+@sentence-table[2]{ They accidentally summoned you. You are
+siblings. You have a dark secret that even you don't know. You were
+friends as kids. They have a crush on you. They have a magical
+artifact that affects you. They are actually your parent. They killed
+your family member. A dark power sent you to them. You trained
+together. You are secretly buddies but publicly enemies. You were
+lovers. You are obssessed with them. You were set up with them,
+but…. They brought you out of the darkness. A dark power is after them
+and only you know. They showed up on Earth and are responsible for
+what happened to you. They took something from you. You had to find
+them to save the world. They welcomed you when you came here for the
+first time. They helped you do something shady once. They are
+convinced you stole something from them. If you don't steal it,
+someone will come after you. They are your rival. You've been through
+thick and thin together. They constantly undermine you. They know
+about your true destiny, but you don't. They want you to cast the
+final ritual. They were apprenticed with you, but weren't as good as
+you. You accidentally blew something up important to them. They fear
+you will interfer with their plans. Your parents asked them to take
+care of you. You are hopelessly in love with them. They served you in
+the last war. You must acquire it at all costs. You were supposed to
+receive it, but it was denied. They are your biggest fan. You know you
+must protect them. They are wrong and need to know it. You were
+commanded to do something you don't want. What you believe is
+wrong. They are your sworn protector. They are destined to sacrifice
+you. You need it to fulfill your destiny. They need your
+guidance. They owe you for saving their life. Your holy quest is to
+find it. They are in great danger. You protected them when they were
+stranded. You know the legend of their past or future. }
 
 @subsection{Consequences}
 
-XXX
+The @T{gamemaster} should try to use @T{failure} to spin new ideas
+into the story. Don't just have the obvious thing go wrong, but do
+something new:
 
-Add a complication. Reveal future trouble. Capture
+@sentence-table[3]{ Add a complication. Reveal future trouble. Capture
 someone. Reintroduce an old foe with a new face. Reveal some
 lore. Tempt them. Provide a clue. Take something away. Withhold, ruin,
-or replace something they have.
+or replace something they have. }
 
 @subsection{Actions}
 
-XXX Make You Kingdom
+When @T{leads} take @T{actions}, it is more interesting to give the
+@T{player} hard choices for how to put their @T{consequences} into the
+@T{fiction}. Here are some templates for different kind of actions:
 
-XXX No Dice
-
-XXX Savage worlds
-
-XXX Worlds of Adventure
-
-XXX Dungeon World
-
-XXX
-
+@actions[
 @action["Resist Temptation"
         "Indulge"
         "Contain yourself, but everyone see's what's going on."
@@ -736,7 +734,7 @@ XXX
               (list "You manage to do it without getting hurt."
                     "The effect is as expected."
                     "A valuable resource is not consumed."))]
-
+]
 
 @section{Resources}
 
@@ -761,3 +759,14 @@ The ideas in this document are inspired by many other great RPGs:
 @ack["XXX"]{Apocalypse World}
 @ack["XXX"]{Beyond the Wall}
 @ack["XXX"]{Dragon World}
+
+XXX Make You Kingdom
+
+XXX No Dice
+
+XXX Savage worlds
+
+XXX Worlds of Adventure
+
+XXX Dungeon World
+
