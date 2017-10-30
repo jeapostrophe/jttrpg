@@ -55,6 +55,8 @@ adjudicates between @T{leads}.
 
 This section explains the @T{mechanical} rules.
 
+XXX Jokers
+
 The @T{play group} has a deck of normal playing cards, called the
 @DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
 pile} and the @DT{discard pile}. At the start of a play session, the
@@ -202,7 +204,7 @@ various actions and qualities and a @T{suit} in the @T{deck}. Each
        @t{@card{Clubs}}
        @t{Strength, Vitality, Constitution, Bend, Absorb, Pry, Throw,
 Hack, Slash, Flex, Endure, Break, Bust, Jump, Climb, Swim, Chug,
-Sprint, Crush, Push, Pull, Lift, Carry, etc.}
+Sprint, Crush, Push, Pull, Lift, Carry, Hard, etc.}
        @t{@T{Intellect}}
        @t{@card{Diamonds}})
  
@@ -218,7 +220,7 @@ Disarm, Stun, Tie, etc.}
        @t{@card{Diamonds}}
        @t{Intelligence, Insight, Study, Solve, Riddle, Cast, Think,
 Remember, Ponder, Deduce, Reason, Decipher, Invent, Search, Convince,
-Debate, Hypothesize, etc.}
+Debate, Hypothesize, Heal, etc.}
        @t{@T{Toughness}}
        @t{@card{Clubs}})
  
@@ -226,7 +228,7 @@ Debate, Hypothesize, etc.}
        @t{@card{Hearts}}
        @t{Wisdom, Charisma, Disrupt, Channel, Commune, Sense, Pray,
 Motivate, Appeal, Empathize, Persude, Convince, Intimidate, Intuit,
-Order, Command, Provoke, etc.}
+Order, Command, Provoke, Seduce, Manipulate, Barter, etc.}
        @t{@T{Agility}}
        @t{@card{Spades}}))
 ]
@@ -404,8 +406,6 @@ arrows'', and thus can no longer use his long bow.
 Inside of single scenes and stories, it should be common to introduce
 and remove @T{tag}s for all of the @T{lead}s.
 
-XXX Action ideas from other games
-
 @subsection{Combat}
 
 There is no need to treat combat encounters and combat actions
@@ -561,6 +561,9 @@ significantly from their established patterns.
 Stay consistency with the setting, campaign, and established parts of
 the story. Occasionally a ret-con or plot-twist is appropriate.
 
+Use a timer sometimes to make a moment tense and give the @T{leads}
+only a short time to react.
+
 You can play without a @T{gamemaster} by collaboratively filling their
 role: any time you feel the need for a @T{gamemaster}, have the person
 to the left of the @T{lead} in focus act as one temporarily. If you
@@ -585,11 +588,155 @@ Use what other roleplaying games call ``classes'' to inspire your
 characters. Here's a huge number of ideas:
 
 Knight. Lady. Knight-at-heart. Troubled Princess. Sorceress. Peaceful
-Monk. Daughter of the Earth.
-
-Barbarian. Spy. 
+Monk. Daughter of the Earth.  Barbarian. Spy. Angel. Battle
+Babe. Brainer. Chopper. Driver. Hardholder. Gunlugger. Gunslinger. Hocus. Techie. Skinner. Operator. Healer. Warrior. Weapon
+Expert. Rogue. Jack of All
+Trades. Mage. High-born. Low-born. Mystic. Devout Acolyte. Errant
+Occultist. Magician's Apprentice. Adventurer. Rune
+Caster. Ranger. Vagabound. Outrider. Dragoon. Performer. Future
+Warlord. Forgotten Child. Novice Templar. Gifted Dilettante. Noble's
+Daughter. Reformed Bully. Self-Taught Mage. Untested Thief. Village
+Hero. Heir to Legend. Would-be Knight. Woodsman. Angsty Shadow
+Warrior. Chosen Visitor. Conniving Thief. Dumb Fighter. Explosive
+Mage. Half Dragon. Cyborg. Monster. Mad Warlord. Nutjob Cleric. Pure
+Sacrifice. Shiny Paladin. Tweaky Shaman. Magical Girl. Useless
+Bard. Dark Blade. Shadow Assassin. Umbral Warrior Mage. Chosen
+Seer. Ordinary Kid in Fantasy World. Plucky Hero. Sacred
+Machine. Ancient Machine. Charming Knave. Clever Treasure
+Hunter. Slimy Cutpurse. Big Bruiser. Legendary Hero. Clever
+Swordsman. Sexy Sorceress. Sneaky Mage. Mystic Maniac. Little
+Monster. Sexy Dynamite. Brutal Captain. Captain Charima. War
+Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
+Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
+Oracle. Charismatic Warrior. Charming Champion. Unrelenting
+Good. Adorable Wild Child. Feral Weirdo. Noble
+Druid. Shape-shifter. Fragile Rock Star. Prissy Minstrel. Unrelenting
+Bard. Dragon Master. Guardian Angel.
 
 XXX
+
+Ideas for unique tags:
+
+Magical Sense. Sword of Pure Darkness. Vanish into another
+Dimension. Earth Gadget. Future Tech. Item out of Time. Knowledge out
+of Time. Mysterious Power. Seedy Connections. Legendary
+Sword. Oblivious to Manipulation. Special Insight. Magical Little
+Friend. Flight. Great Store of Wealth. Fire Breath. Ridiculously
+Strong. Ridiculously Old. Squad of Retainers. Divine Visions. Healing
+Touch. Royal Privilege. Magical Horse. Speak to Animals. Commune with
+Spirits. Has a Guardian Angel. Haunted. Hunted.
+
+XXX
+
+Make connections between the characters and other people in the world:
+
+They accidentally summoned you. You are siblings. You were friends as
+kids. They have a crush on you. They have a magical artifact that
+affects you. They are actually your parent. They killed your family
+member. A dark power sent you to them. You trained together. You are
+secretly buddies but publicly enemies. You were lovers. You are
+obssessed with them. You were set up with them, but…. They brought you
+out of the darkness. A dark power is after them and only you
+know. They showed up on Earth and are responsible for what happened to
+you. They took something from you. You had to find them to save the
+world. They welcomed you when you came here for the first time. They
+helped you do something shady once. They are convinced you stole
+something from them. If you don't steal it, someone will come after
+you. They are your rival. You've been through thick and thin
+together. They constantly undermine you. They know about your true
+destiny, but you don't. They want you to cast the final ritual. They
+were apprenticed with you, but weren't as good as you. You
+accidentally blew something up important to them. They fear you will
+interfer with their plans. Your parents asked them to take care of
+you. You are hopelessly in love with them. They served you in the last
+war. You must acquire it at all costs. You were supposed to receive
+it, but it was denied. They are your biggest fan. You know you must
+protect them. They are wrong and need to know it. You were commanded
+to do something you don't want. What you believe is wrong. They are
+your sworn protector. They are destined to sacrifice you. You need it
+to fulfill your destiny. They need your guidance. They owe you for
+saving their life. Your holy quest is to find it. They are in great
+danger. You protected them when they were stranded. You know the
+legend of their past or future.
+
+XXX
+
+@subsection{Consequences}
+
+XXX
+
+Add a complication. Reveal future trouble. Capture
+someone. Reintroduce an old foe with a new face. Reveal some
+lore. Tempt them. Provide a clue. Take something away. Withhold, ruin,
+or replace something they have.
+
+@subsection{Actions}
+
+XXX Make You Kingdom
+
+XXX No Dice
+
+XXX Savage worlds
+
+XXX Worlds of Adventure
+
+XXX Dungeon World
+
+XXX
+
+@action["Resist Temptation"
+        "Indulge"
+        "Contain yourself, but everyone see's what's going on."
+        "You manage to resist and keep it quiet."]
+@action["Defy Danger"
+        "Fail and face adversity."
+        "Your standing, but in trouble."
+        "You're safe."]
+@action["Kick Butt"
+        "Fail and be put into danger."
+        1 2
+        (list "Put them in danger."
+              "Deal damage"
+              "Gain the upper hand.")]
+@action["Run Away"
+        2 1 "Get away"
+        (list "Leave something behind."
+              "Get caught."
+              "Your escape was noticed."
+              "Your escape is temporary.")]
+@action["Spout Lore"
+        1 "Some details elude you." "You know what's going on."
+        (list "Your understanding is subtly wrong in a dangerous way."
+              "Your understanding is obviously wrong in an embarrassing way.")]
+@action["Steal"
+        "You are caught." 1 2
+        (list "You take what you wanted."
+              "They didn't see you do it."
+              "You keep them from coming back for it."
+              "You seriously deter them.")]
+@action["Trick"
+        "They realize what you're doing and are hostile."
+        1 "They are suckered."
+        (list "They don't do quite what you wanted."
+              "After they do it, they know they've been tricked.")]
+@action["Help"
+        "You hinder them." 1 "You help them."
+        (list "There are unwanted consequences of the help."
+              "You expose yourself to danger.")]
+@action["Buy Stuff"
+        "You don't get what you want or can't afford it after you take it and there's retribution."
+        2 1
+        (list "You lose a resource related tag or gain a poverty related tag."
+              "There is a problem with what you got."
+              "You drew unwanted attention.")]
+@action["Ritual"
+        (cons 2 #f) (cons 1 1) (cons #f 2)
+        (cons (list "You face adversity." "There's a dangerous side-effect"
+                    "It does something humiliating." "You get a negative tag.")
+              (list "You manage to do it without getting hurt."
+                    "The effect is as expected."
+                    "A valuable resource is not consumed."))]
+
 
 @section{Resources}
 
@@ -611,3 +758,6 @@ The ideas in this document are inspired by many other great RPGs:
 @ack["http://www.jwarts.com/tqb.pdf"]{The Questing Beast}
 @ack["http://www.dungeon-world.com"]{Dungeon World}
 @ack["https://www.reddit.com/r/DungeonWorld/comments/76uu6z/we_are_proud_to_announce_worlds_of_adventure/"]{Worlds of Adventure}
+@ack["XXX"]{Apocalypse World}
+@ack["XXX"]{Beyond the Wall}
+@ack["XXX"]{Dragon World}
