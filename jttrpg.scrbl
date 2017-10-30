@@ -814,16 +814,6 @@ XXX abstract battle map
 
 @section{Acknowledgments}
 
-@(define ACKS empty)
-@(define (ack u . t)
-(set! ACKS
-      ;; XXX Sort
-      (cons (apply link u t)
-            ACKS)))
-
-The ideas in this document are inspired by many other great RPGs:
-@(apply itemlist (map item ACKS))
-
 @ack["http://www.jwarts.com/thepoolrpg.pdf"]{The Pool RPG}
 @ack["http://www.jwarts.com/tqb.pdf"]{The Questing Beast}
 @ack["http://www.dungeon-world.com"]{Dungeon World}
@@ -833,6 +823,14 @@ The ideas in this document are inspired by many other great RPGs:
 @ack["XXX"]{Dragon World}
 @ack["XXX"]{No Dice RPG}
 @ack["XXX"]{Savage Worlds}
+
+@(define ACKS empty)
+@(define (ack u . t) (set! ACKS (cons (vector u (string-join t)) ACKS)))
+
+The ideas in this document are inspired by many other great RPGs:
+@(apply itemlist
+        (map (λ (v) (item (link (vector-ref v 0) (vector-ref v 1))))
+             (sort ACKS string<=? #:key (λ (v) (vector-ref v 1)))))
 
 XXX Worlds of Adventure
 
