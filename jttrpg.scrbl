@@ -313,8 +313,7 @@ neutral, negative, or any combination, depending on the
 circumstances. Avoid very vague @T{tags} and try to be specific.
 
 @T{Tags} can be permanent, temporary, fleeting, disposal, etc,
-depending on the particular details of the @T{fiction} and
-@T{setting}.
+depending on the particular details of the @T{fiction} and setting.
 
 In general, @T{tags} change what a @T{lead} can do and how well they
 can do it. For example, in a story about soldiers, having a rifle is
@@ -644,14 +643,14 @@ Daughter. Reformed Bully. Self-Taught Mage. Untested Thief. Village
 Hero. Heir to Legend. Would-be Knight. Woodsman. Angsty Shadow
 Warrior. Chosen Visitor. Conniving Thief. Dumb Fighter. Explosive
 Mage. Half Dragon. Cyborg. Monster. Mad Warlord. Nutjob Cleric. Pure
-Sacrifice. Shiny Paladin. Tweaky Shaman. Magical Girl. Useless
-Bard. Dark Blade. Shadow Assassin. Umbral Warrior Mage. Chosen
-Seer. Ordinary Kid in Fantasy World. Plucky Hero. Sacred
-Machine. Ancient Machine. Charming Knave. Clever Treasure
-Hunter. Slimy Cutpurse. Big Bruiser. Legendary Hero. Clever
-Swordsman. Sexy Sorceress. Sneaky Mage. Mystic Maniac. Little
-Monster. Sexy Dynamite. Brutal Captain. Captain Charima. War
-Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
+Sacrifice. Shiny Paladin. Tweaky Shaman. Magical
+Girl. Bard. Ranger. Wizard. Useless Bard. Dark Blade. Shadow
+Assassin. Umbral Warrior Mage. Chosen Seer. Ordinary Kid in Fantasy
+World. Plucky Hero. Sacred Machine. Ancient Machine. Charming
+Knave. Clever Treasure Hunter. Slimy Cutpurse. Big Bruiser. Legendary
+Hero. Clever Swordsman. Sexy Sorceress. Sneaky Mage. Mystic
+Maniac. Little Monster. Sexy Dynamite. Brutal Captain. Captain
+Charima. War Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
 Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
 Oracle. Charismatic Warrior. Charming Champion. Unrelenting
 Good. Adorable Wild Child. Feral Weirdo. Noble
@@ -731,7 +730,7 @@ Love. Sacrifice for Passion. Adultery. Crimes of Love. Obstacles to
 Love. An Enemy Loved. Mistaken Jealousy.
 }
 
-@subsection{Consequences}
+@subsection[#:tag "adv-cons"]{Consequences}
 
 The @T{gamemaster} should try to use @T{failure} to spin new ideas
 into the story. Don't just have the obvious thing go wrong, but do
@@ -742,7 +741,7 @@ someone. Reintroduce an old foe with a new face. Reveal some
 lore. Tempt them. Provide a clue. Take something away. Withhold, ruin,
 or replace something they have. }
 
-@subsection{Actions}
+@subsection[#:tag "adv-act"]{Actions}
 
 When @T{leads} take @T{actions}, it is more interesting to give the
 @T{player} hard choices for how to put their @T{consequences} into the
@@ -838,5 +837,7 @@ The ideas in this document are inspired by many other great RPGs:
 XXX Worlds of Adventure
 
 XXX Dungeon World
+
+XXX D&D 4e
 
 XXX Final Fantasy and Dragon Quest jobs
