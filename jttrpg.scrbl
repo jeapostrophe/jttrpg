@@ -520,7 +520,8 @@ fantasy. Comic fantasty. Contemporary fantasy. Spiritual fantasy. Bug
 hunt. Space
 opera. Weird. Horror. Pulp. Slasher. Baroque. Supernatural. Ghost
 stories. Mystery. Espionage. War. Western. Martial
-Arts. Egyptian. Ancient Greece.
+Arts. Egyptian. Ancient Greece. Weird West. Space 1889. Weird War
+III. The Dark Elder Gods. The Dark Continent.
 
 @subsection[#:tag "flav-char"]{Characters}
 
@@ -658,7 +659,9 @@ Druid. Shape-shifter. Fragile Rock Star. Prissy Minstrel. Unrelenting
 Bard. Dragon Master. Guardian Angel. Magitek
 Knight. Professor. Martial Artist. Monk. Karate
 Fighter. Inventor. Kung Fu Warrior. Magic Knight. Blue Mage. Red
-Mage. White Mage. Black Mage. Beastmaster. Wilding. Fearless Leader. }
+Mage. White Mage. Black Mage. Beastmaster. Wilding. Fearless
+Leader. Driver. Marksman. Archer. Investigator. Detective. Pilot. Pirate. Scientist. Android. Atlantean. Pilgrim. Acrobat. Assassin. Holy
+Warrior. McGyver. Mentalist.}
 
 Use these tropes to come up with your character concept, as well as
 your initial set of @T{tags}. You can also think about unique items
@@ -672,7 +675,8 @@ Insight. Magical Little Friend. Flight. Great Store of Wealth. Fire
 Breath. Ridiculously Strong. Ridiculously Old. Squad of
 Retainers. Divine Visions. Healing Touch. Royal Privilege. Magical
 Horse. Speak to Animals. Commune with Spirits. Has a Guardian
-Angel. Haunted. Hunted. Unique Cybersuit.  }
+Angel. Haunted. Hunted. Unique
+Cybersuit. Attractive. Ambidexterous. Brave. Linguist. Noble. Lucky. Ace. }
 
 A further way to create interesting characters is to connect them to
 each other and other people out in the world. Here are some ideas:
@@ -814,6 +818,7 @@ XXX abstract battle map
 @(define ACKS empty)
 @(define (ack u . t)
 (set! ACKS
+      ;; XXX Sort
       (cons (apply link u t)
             ACKS)))
 
@@ -828,8 +833,7 @@ The ideas in this document are inspired by many other great RPGs:
 @ack["XXX"]{Beyond the Wall}
 @ack["XXX"]{Dragon World}
 @ack["XXX"]{No Dice RPG}
-
-XXX Savage worlds
+@ack["XXX"]{Savage Worlds}
 
 XXX Worlds of Adventure
 
