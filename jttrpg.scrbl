@@ -1,5 +1,7 @@
 #lang scribble/base
 @(require racket/list
+          racket/match
+          racket/format
           racket/string
           scribble/manual)
 
@@ -34,11 +36,13 @@
                 (and (not (string=? "" r)) r))
               (string-split (string-join (flatten content)) "."))
              string<=?))
+     (define duped (check-duplicates sents))
+     (when duped (eprintf "~v is duplicated.\n" duped))
      (tabular #:style 'boxed
               #:sep (hspace 2)
               #:column-properties '(left)
               #:row-properties '(bottom-border)
-              (chunk num "" sents))))
+              (chunk num "" (remove-duplicates sents)))))
 
 @title{JTTRPG}
 @author{@author+email["Jay McCarthy" "jay.mccarthy@gmail.com"]}
@@ -612,18 +616,155 @@ planned plot twists... or will there?
 
 @subsection{Campaigns}
 
-XXX hero's journey
-XXX mcguffin
-XXX when to gain a tag
+Before you start playing, set up the broad outlines of the campaign
+and the story beats that you will hit. Follow a
+@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
+structure} and model it after a classic narrative structure like the
+@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
+Monomyth}. Punctuate the acts with the reception of an important new
+@T{tag} for each character that drastically changes how their
+capabilities. Put a few @DT{McGuffins} on their path that will
+determine the difficulty of the ordeal, if they fall into the Big
+Bad's hands.
 
-XXX Overcoming the Monster, Rags to Riches, The Quest, Voyage and
-Return, Comedy, Tragedy, Rebirth,
+Here's an example structure to apply based on
+@link["https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers"]{Christopher
+Vogler}'s interpretation of the
+@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
+Monomyth}:
+@tabular[
+    #:style 'boxed
+    #:sep (hspace 2)
+    #:column-properties '(left)
+    #:row-properties '(bottom-border)
+    (let ([b bold])
+    (list
+     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics} @b{Sessions})
+     (list @b{Departure}
+           @b{The Ordinary World}
+           @t{The hero is seen in their everyday life.}
+           @para{}
+           @t{0.25})
+           
+     (list @b{}
+           @b{The Call to Adventure}
+           @t{The initiating incident of the story.}
+           @para{Preview the final threat in some way. Take something important away.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Refusal of the Call}
+           @t{The hero experiences some hesitation to answer the call.}
+           @para{Perhaps have some innocuous be a @T{McGuffin} for later.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Meeting with the Mentor and Receiving Supernatural Aid}
+           @t{The hero gains the supplies, knowledge, and confidence needed to commence the adventure.}
+           @para{Give a significant @T{tag} from The Mentor who may reappear.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Crossing the First Threshold to the Special World into the Belly of the Whale}
+           @t{The hero commits wholeheartedly to the adventure.}
+           @para{Face the Threshold Guardian and receive a minor @T{tag}.}
+           @t{1.00})
+           
+     (list @b{Initiation}
+           @b{The Road of Trials: Tests, Allies and Enemies}
+           @t{The hero explores the special world, faces trial, and makes friends and enemies.}
+           @para{This stage could last a long time. Provide a few minor @T{tag}s as rewards and maybe a @T{McGuffin}.}
+           @t{3.00})
+
+     (list @b{}
+           @b{Meeting with the Goddess and Approach to the Innermost Cave}
+           @t{The hero nears the center of the story and the special world}
+           @para{Require a @T{McGuffin} to find the center and proceed.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Atonement and Ordeal}
+           @t{The hero faces the greatest challenge yet and experiences death and rebirth.}
+           @para{All of the @T{McGuffin}s come into play.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Ultimate Boon and Reward}
+           @t{The hero experiences the consequences of surviving death.}
+           @para{Receive a major @T{tag}.}
+           @t{0.50})
+
+     (list @b{Return}
+           @b{The Road Back}
+           @t{The hero returns to the ordinary world or continues to an ultimate destination.}
+           @para{Mirror the Road of Trials, but with greater strength. Provide a few minor @T{tag}s as rewards.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Resurrection}
+           @t{The hero experiences a final moment of death and rebirth so they are pure when they reenter the ordinary world.}
+           @para{}
+           @t{0.50})
+
+     (list @b{}
+           @b{Return with the Elixir}
+           @t{The hero returns with something to improve the ordinary world}
+           @para{}
+           @t{0.50})
+           
+))]
 
 @subsection{Stories}
 
-XXX clues
-XXX resources
-XXX gain a tag
+Within each session of play or story, create a
+@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
+structure} within the episode. Within an episode, give out temporary
+resources or @DT{clues} that will be used within the story, but are
+not relevant for the campaign. Finish the story with a @T{tag} as a
+reward or punishment and potentially a @T{McGuffin} being handed out.
+
+@tabular[
+    #:style 'boxed
+    #:sep (hspace 2)
+    #:column-properties '(left)
+    #:row-properties '(bottom-border)
+    (let ([b bold])
+    (list
+     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics})
+     (list @b{Setup}
+           @b{Exposition}
+           @t{Connect this story to the last story and place it the campaign.}
+           @para{})
+
+     (list @b{}
+           @b{Dynamic Incident}
+           @t{Something happens to shock the @T{lead}s out of safety.}
+           @para{The threat will be faced with but cannot be defeated. Success will give a @T{clue}, but not defeat.})
+
+     (list @b{}
+           @b{Turning Point}
+           @t{The @T{lead}s realize why the threat could not be defeated.}
+           @para{This is another opportunity to find a @T{clue} without the threat involved.})
+
+     (list @b{Confrontation}
+           @b{Rising Action}
+           @t{The situation worsens as attempts to solve the threat fail or another twist is revealed.}
+           @para{There is a realization that another @T{clue} is necessary.})
+
+     (list @b{}
+           @b{Development}
+           @t{The @T{lead}s develop in some way that prepares them for the climax.}
+           @para{The keystone @T{clue} is received, or not.})
+
+     (list @b{Resolution}
+           @b{Climax}
+           @t{The threat is finally faced and defeated.}
+           @para{The @T{clue}s are finally consumed and disposed of.})
+
+     (list @b{}
+           @b{Falling Action}
+           @t{The consequences of success are understood and dealt with.}
+           @para{The @T{tag} for the reward or punishment is given and the episode is reconnected with the campaign.})))]
 
 @subsection{Characters}
 
@@ -633,34 +774,41 @@ characters. Here's a huge number of ideas:
 @sentence-table[4]{ Knight. Lady. Knight-at-heart. Troubled
 Princess. Sorceress. Peaceful Monk. Daughter of the Earth.
 Barbarian. Spy. Angel. Battle
-Babe. Brainer. Chopper. Driver. Hardholder. Gunlugger. Gunslinger. Hocus. Techie. Skinner. Operator. Healer. Warrior. Weapon
+Babe. Brainer. Chopper. Hardholder. Gunlugger. Gunslinger. Hocus. Techie. Skinner. Operator. Healer. Warrior. Weapon
 Expert. Rogue. Jack of All Trades. Mage. High-born. Slayer. Vampire
 Killer. Chosen One. Low-born. Mystic. Devout Acolyte. Errant
 Occultist. Magician's Apprentice. Adventurer. Rune
-Caster. Ranger. Vagabound. Outrider. Dragoon. Performer. Future
+Caster. Ranger. Vagabound. Outrider. Dragoon. Future
 Warlord. Forgotten Child. Novice Templar. Gifted Dilettante. Noble's
 Daughter. Reformed Bully. Self-Taught Mage. Untested Thief. Village
 Hero. Heir to Legend. Would-be Knight. Woodsman. Angsty Shadow
 Warrior. Chosen Visitor. Conniving Thief. Dumb Fighter. Explosive
 Mage. Half Dragon. Cyborg. Monster. Mad Warlord. Nutjob Cleric. Pure
 Sacrifice. Shiny Paladin. Tweaky Shaman. Magical
-Girl. Bard. Ranger. Wizard. Useless Bard. Dark Blade. Shadow
-Assassin. Umbral Warrior Mage. Chosen Seer. Ordinary Kid in Fantasy
-World. Plucky Hero. Sacred Machine. Ancient Machine. Charming
-Knave. Clever Treasure Hunter. Slimy Cutpurse. Big Bruiser. Legendary
-Hero. Clever Swordsman. Sexy Sorceress. Sneaky Mage. Mystic
-Maniac. Little Monster. Sexy Dynamite. Brutal Captain. Captain
-Charima. War Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
+Girl. Bard. Wizard. Useless Bard. Dark Blade. Shadow Assassin. Umbral
+Warrior Mage. Chosen Seer. Ordinary Kid in Fantasy World. Plucky
+Hero. Sacred Machine. Ancient Machine. Charming Knave. Clever Treasure
+Hunter. Slimy Cutpurse. Big Bruiser. Legendary Hero. Clever
+Swordsman. Sexy Sorceress. Sneaky Mage. Mystic Maniac. Little
+Monster. Sexy Dynamite. Brutal Captain. Captain Charima. War
+Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
 Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
 Oracle. Charismatic Warrior. Charming Champion. Unrelenting
 Good. Adorable Wild Child. Feral Weirdo. Noble
 Druid. Shape-shifter. Fragile Rock Star. Prissy Minstrel. Unrelenting
 Bard. Dragon Master. Guardian Angel. Magitek
 Knight. Professor. Martial Artist. Monk. Karate
-Fighter. Inventor. Kung Fu Warrior. Magic Knight. Blue Mage. Red
-Mage. White Mage. Black Mage. Beastmaster. Wilding. Fearless
-Leader. Driver. Marksman. Archer. Investigator. Detective. Pilot. Pirate. Scientist. Android. Atlantean. Pilgrim. Acrobat. Assassin. Holy
-Warrior. McGyver. Mentalist.}
+Fighter. Inventor. Kung Fu Warrior. Red Mage. White Mage. Black
+Mage. Wildling. Fearless
+Leader. Driver. Marksman. Archer. Investigator. Detective. Pilot. Scientist. Android. Atlantean. Pilgrim. Acrobat. Assassin. Holy
+Warrior. McGyver. Mentalist. Animist. Arcanist. Astrologian. Beastmaster. Berserker. Bishop. Black
+Belt. Blue Mage. Cannoneer. Chemist. Commando. Dancer. Dark
+Knight. Defender. Elementalist. Fencer. Flintlock. Freelancer. Gambler. Geomancer. Gladiator. Gunner. Illusionist. Juggler. Machinist. Medic. Magus. Sage. Goof-off. Merchant. Mime. Moogle
+Knight. Mystic Knight. Magic Knight. Necromancer. Ninja. Onion
+Knight. Oracle. Orator. Pirate. Puppetmaster. Ravager. Saboteur. Samurai. Scholar. Seer. Sentinel. Sky
+Pirate. Sniper. Soldier. Squire. Summoner. Synergist. Thief. Time
+Mage. Trickster. Viking. Spiritmaster. Vampire. Conjurer. Salve-Maker. Performer. Valkyrie. Spell
+Fencer. Swordmaster. Charioteer. Catmancer. Hawkeye. Patissier. Bandit. Musician. Seamstress. Scribe. Storyteller. Avenger. Artificer. Invoker. Psion. Shaman. Warden. Warlock. Warlord. }
 
 Use these tropes to come up with your character concept, as well as
 your initial set of @T{tags}. You can also think about unique items
@@ -714,8 +862,9 @@ Another way to think about your character is the dramatic situation
 they find themselves in. This can define the character, a story, or
 even the whole campaign.
 
-@sentence-table[2]{
-Supplication. Crime Pursued By
+@sentence-table[2]{ Overcoming the Monster. Rags to Riches. The
+Quest. Voyage and
+Return. Comedy. Tragedy. Rebirth. Supplication. Crime Pursued By
 Vengeance. Pursuit. Obtaining. Self-sacrifice For An
 Ideal. Deliverance. Daring Enterprise. Returners. Abduction. The
 Engima. Recovery of a Lost One. Vengeance Taken For Kin Upon
@@ -727,8 +876,7 @@ Inferior. Ambition. Conflict with a God. Fallying Prey to
 Misfortune. Madness. Fatal Imprudence. Erroneous
 Judgement. Remorse. Murderous Adultery. Involuntary Crimes of
 Love. Sacrifice for Passion. Adultery. Crimes of Love. Obstacles to
-Love. An Enemy Loved. Mistaken Jealousy.
-}
+Love. An Enemy Loved. Mistaken Jealousy.  }
 
 @subsection[#:tag "adv-cons"]{Consequences}
 
@@ -747,9 +895,32 @@ When @T{leads} take @T{actions}, it is more interesting to give the
 @T{player} hard choices for how to put their @T{consequences} into the
 @T{fiction}. Here are some templates for different kind of actions:
 
+@(struct *action (what fail-o partial-o succ-o opts))
 @(define (action what fail-o partial-o succ-o [opts #f])
-   "XXX")
-@(define (actions . x) "XXX")
+   (*action what fail-o partial-o succ-o opts))
+@(define (render-result o opts)
+  (match o
+    [(? string?) o]
+    [(? number?)
+     @nested{Choose @(~a o) from the list of options:
+                    @(for/list ([o (in-list opts)]
+                                [i (in-naturals 1)])
+                       (list @bold{(@(~a i))} " " o " "))}]
+    [(cons o opts) (render-result o opts)]))
+@(define (actions . x)
+(tabular
+ #:style 'boxed
+ #:sep (hspace 2)
+ #:column-properties '(left)
+ #:row-properties '((bottom-border top))
+ (cons
+  (map bold (list "Action" "Fail" "Partial" "Success"))
+  (for/list ([a (in-list (sort (filter *action? x) string<=? #:key *action-what))])
+    (match-define (*action what fail-o partial-o succ-o opts) a)
+    (list what
+          (render-result fail-o opts)
+          (render-result partial-o opts)
+          (render-result succ-o opts))))))
 
 @actions[
 @action["Resist Temptation"
@@ -758,7 +929,7 @@ When @T{leads} take @T{actions}, it is more interesting to give the
         "You manage to resist and keep it quiet."]
 @action["Defy Danger"
         "Fail and face adversity."
-        "Your standing, but in trouble."
+        "You're standing, but in trouble."
         "You're safe."]
 @action["Kick Butt"
         "Fail and be put into danger."
@@ -798,12 +969,12 @@ When @T{leads} take @T{actions}, it is more interesting to give the
               "There is a problem with what you got."
               "You drew unwanted attention.")]
 @action["Ritual"
-        (cons 2 #f) (cons 1 1) (cons #f 2)
-        (cons (list "You face adversity." "There's a dangerous side-effect"
-                    "It does something humiliating." "You get a negative tag.")
-              (list "You manage to do it without getting hurt."
-                    "The effect is as expected."
-                    "A valuable resource is not consumed."))]
+        (cons 2 (list "You face adversity." "There's a dangerous side-effect"
+                      "It does something humiliating." "You get a negative tag."))
+        "Choose 1 result from each list."
+        (cons 2 (list "You manage to do it without getting hurt."
+                      "The effect is as expected."
+                      "A valuable resource is not consumed."))]
 ]
 
 @section{Resources}
@@ -811,6 +982,7 @@ When @T{leads} take @T{actions}, it is more interesting to give the
 XXX character sheet
 XXX rule quick reference
 XXX abstract battle map
+XXX campaign/story structure worksheet
 
 @section{Acknowledgments}
 
@@ -818,11 +990,14 @@ XXX abstract battle map
 @ack["http://www.jwarts.com/tqb.pdf"]{The Questing Beast}
 @ack["http://www.dungeon-world.com"]{Dungeon World}
 @ack["https://www.reddit.com/r/DungeonWorld/comments/76uu6z/we_are_proud_to_announce_worlds_of_adventure/"]{Worlds of Adventure}
-@ack["XXX"]{Apocalypse World}
-@ack["XXX"]{Beyond the Wall}
-@ack["XXX"]{Dragon World}
-@ack["XXX"]{No Dice RPG}
-@ack["XXX"]{Savage Worlds}
+@ack["http://apocalypse-world.com"]{Apocalypse World}
+@ack["https://www.flatlandgames.com/btw/"]{Beyond the Wall}
+@ack["https://yarukizerogames.com/tag/dragon-world/"]{Dragon World}
+@ack["https://sites.google.com/site/nodicerpg/Home"]{No Dice RPG}
+@ack["https://www.peginc.com/product-category/savage-worlds/"]{Savage Worlds}
+@ack["https://en.wikipedia.org/wiki/Final_Fantasy"]{Final Fantasy}
+@ack["https://en.wikipedia.org/wiki/Bravely_Default"]{Bravely Default}
+@ack["http://dnd.wizards.com"]{Dungeons and Dragons}
 
 @(define ACKS empty)
 @(define (ack u . t) (set! ACKS (cons (vector u (string-join t)) ACKS)))
@@ -835,7 +1010,3 @@ The ideas in this document are inspired by many other great RPGs:
 XXX Worlds of Adventure
 
 XXX Dungeon World
-
-XXX D&D 4e
-
-XXX Final Fantasy and Dragon Quest jobs
