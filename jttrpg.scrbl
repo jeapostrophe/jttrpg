@@ -13,6 +13,7 @@
    (define HOW-BIG-HANDs "five")
    (define card bold)
 
+   (define (snoc l x) (append l (list x)))
    (define (force-n n l def)
      (append l (make-list (- n (length l)) def)))
    
@@ -23,7 +24,7 @@
                                      (rest r)))]
          [(zero? i) (loop (cons empty r) n xs)]
          [else
-          (loop (cons (cons (first xs) (first r))
+          (loop (cons (snoc (first r) (first xs))
                       (rest r))
                 (sub1 i)
                 (rest xs))])))
@@ -32,7 +33,7 @@
      (define sents
        (sort (filter-map
               (λ (x)
-                (define r (regexp-replace #rx" *$" (regexp-replace #rx"^ *" x "") ""))
+                (define r (regexp-replace #rx"[ \n]*$" (regexp-replace #rx"^[ \n]*" x "") ""))
                 (and (not (string=? "" r)) r))
               (string-split (string-join (flatten content)) "."))
              string<=?))
@@ -468,7 +469,8 @@ adjacent areas.
 
 This section gives advice on choosing the @T{flavor} of the
 @T{fiction}. There are no strict rules here, so just be inspired and
-have fun.
+have fun. The entire @T{play group} should discuss these points
+together.
 
 We divide our discuss into four sections:
 @itemlist[#:style 'ordered
@@ -586,10 +588,7 @@ self-contained, but push the greater arc of the story too. Think about
 having ``specials'' that incorprate interesting and different styles
 as you go.
 
-@section{Advice}
-
-This section has a smattering of advice across the whole play
-experience.
+@section{Player Advice}
 
 @subsection{Roleplaying Tips}
 
@@ -613,158 +612,6 @@ to the left of the @T{lead} in focus act as one temporarily. If you
 remember to share the spotlight and respect each other, then it should
 go smoothly. The major downside is that there will not be secretly
 planned plot twists... or will there?
-
-@subsection{Campaigns}
-
-Before you start playing, set up the broad outlines of the campaign
-and the story beats that you will hit. Follow a
-@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
-structure} and model it after a classic narrative structure like the
-@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
-Monomyth}. Punctuate the acts with the reception of an important new
-@T{tag} for each character that drastically changes how their
-capabilities. Put a few @DT{McGuffins} on their path that will
-determine the difficulty of the ordeal, if they fall into the Big
-Bad's hands.
-
-Here's an example structure to apply based on
-@link["https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers"]{Christopher
-Vogler}'s interpretation of the
-@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
-Monomyth}:
-@tabular[
-    #:style 'boxed
-    #:sep (hspace 2)
-    #:column-properties '(left)
-    #:row-properties '(bottom-border)
-    (let ([b bold])
-    (list
-     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics} @b{Sessions})
-     (list @b{Departure}
-           @b{The Ordinary World}
-           @t{The hero is seen in their everyday life.}
-           @para{}
-           @t{0.25})
-           
-     (list @b{}
-           @b{The Call to Adventure}
-           @t{The initiating incident of the story.}
-           @para{Preview the final threat in some way. Take something important away.}
-           @t{0.25})
-           
-     (list @b{}
-           @b{Refusal of the Call}
-           @t{The hero experiences some hesitation to answer the call.}
-           @para{Perhaps have some innocuous be a @T{McGuffin} for later.}
-           @t{0.25})
-           
-     (list @b{}
-           @b{Meeting with the Mentor and Receiving Supernatural Aid}
-           @t{The hero gains the supplies, knowledge, and confidence needed to commence the adventure.}
-           @para{Give a significant @T{tag} from The Mentor who may reappear.}
-           @t{0.25})
-           
-     (list @b{}
-           @b{Crossing the First Threshold to the Special World into the Belly of the Whale}
-           @t{The hero commits wholeheartedly to the adventure.}
-           @para{Face the Threshold Guardian and receive a minor @T{tag}.}
-           @t{1.00})
-           
-     (list @b{Initiation}
-           @b{The Road of Trials: Tests, Allies and Enemies}
-           @t{The hero explores the special world, faces trial, and makes friends and enemies.}
-           @para{This stage could last a long time. Provide a few minor @T{tag}s as rewards and maybe a @T{McGuffin}.}
-           @t{3.00})
-
-     (list @b{}
-           @b{Meeting with the Goddess and Approach to the Innermost Cave}
-           @t{The hero nears the center of the story and the special world}
-           @para{Require a @T{McGuffin} to find the center and proceed.}
-           @t{1.50})
-
-     (list @b{}
-           @b{The Atonement and Ordeal}
-           @t{The hero faces the greatest challenge yet and experiences death and rebirth.}
-           @para{All of the @T{McGuffin}s come into play.}
-           @t{1.50})
-
-     (list @b{}
-           @b{The Ultimate Boon and Reward}
-           @t{The hero experiences the consequences of surviving death.}
-           @para{Receive a major @T{tag}.}
-           @t{0.50})
-
-     (list @b{Return}
-           @b{The Road Back}
-           @t{The hero returns to the ordinary world or continues to an ultimate destination.}
-           @para{Mirror the Road of Trials, but with greater strength. Provide a few minor @T{tag}s as rewards.}
-           @t{1.50})
-
-     (list @b{}
-           @b{The Resurrection}
-           @t{The hero experiences a final moment of death and rebirth so they are pure when they reenter the ordinary world.}
-           @para{}
-           @t{0.50})
-
-     (list @b{}
-           @b{Return with the Elixir}
-           @t{The hero returns with something to improve the ordinary world}
-           @para{}
-           @t{0.50})
-           
-))]
-
-@subsection{Stories}
-
-Within each session of play or story, create a
-@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
-structure} within the episode. Within an episode, give out temporary
-resources or @DT{clues} that will be used within the story, but are
-not relevant for the campaign. Finish the story with a @T{tag} as a
-reward or punishment and potentially a @T{McGuffin} being handed out.
-
-@tabular[
-    #:style 'boxed
-    #:sep (hspace 2)
-    #:column-properties '(left)
-    #:row-properties '(bottom-border)
-    (let ([b bold])
-    (list
-     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics})
-     (list @b{Setup}
-           @b{Exposition}
-           @t{Connect this story to the last story and place it the campaign.}
-           @para{})
-
-     (list @b{}
-           @b{Dynamic Incident}
-           @t{Something happens to shock the @T{lead}s out of safety.}
-           @para{The threat will be faced with but cannot be defeated. Success will give a @T{clue}, but not defeat.})
-
-     (list @b{}
-           @b{Turning Point}
-           @t{The @T{lead}s realize why the threat could not be defeated.}
-           @para{This is another opportunity to find a @T{clue} without the threat involved.})
-
-     (list @b{Confrontation}
-           @b{Rising Action}
-           @t{The situation worsens as attempts to solve the threat fail or another twist is revealed.}
-           @para{There is a realization that another @T{clue} is necessary.})
-
-     (list @b{}
-           @b{Development}
-           @t{The @T{lead}s develop in some way that prepares them for the climax.}
-           @para{The keystone @T{clue} is received, or not.})
-
-     (list @b{Resolution}
-           @b{Climax}
-           @t{The threat is finally faced and defeated.}
-           @para{The @T{clue}s are finally consumed and disposed of.})
-
-     (list @b{}
-           @b{Falling Action}
-           @t{The consequences of success are understood and dealt with.}
-           @para{The @T{tag} for the reward or punishment is given and the episode is reconnected with the campaign.})))]
 
 @subsection{Characters}
 
@@ -976,6 +823,160 @@ When @T{leads} take @T{actions}, it is more interesting to give the
                       "The effect is as expected."
                       "A valuable resource is not consumed."))]
 ]
+
+@section{Gamemaster Advice}
+
+@subsection{Campaigns}
+
+Before you start playing, set up the broad outlines of the campaign
+and the story beats that you will hit. Follow a
+@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
+structure} and model it after a classic narrative structure like the
+@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
+Monomyth}. Punctuate the acts with the reception of an important new
+@T{tag} for each character that drastically changes how their
+capabilities. Put a few @DT{McGuffins} on their path that will
+determine the difficulty of the ordeal, if they fall into the Big
+Bad's hands.
+
+Here's an example structure to apply based on
+@link["https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers"]{Christopher
+Vogler}'s interpretation of the
+@link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
+Monomyth}:
+@tabular[
+    #:style 'boxed
+    #:sep (hspace 2)
+    #:column-properties '(left)
+    #:row-properties '(bottom-border)
+    (let ([b bold])
+    (list
+     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics} @b{Sessions})
+     (list @b{Departure}
+           @b{The Ordinary World}
+           @t{The hero is seen in their everyday life.}
+           @para{}
+           @t{0.25})
+           
+     (list @b{}
+           @b{The Call to Adventure}
+           @t{The initiating incident of the story.}
+           @para{Preview the final threat in some way. Take something important away.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Refusal of the Call}
+           @t{The hero experiences some hesitation to answer the call.}
+           @para{Perhaps have some innocuous be a @T{McGuffin} for later.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Meeting with the Mentor and Receiving Supernatural Aid}
+           @t{The hero gains the supplies, knowledge, and confidence needed to commence the adventure.}
+           @para{Give a significant @T{tag} from The Mentor who may reappear.}
+           @t{0.25})
+           
+     (list @b{}
+           @b{Crossing the First Threshold to the Special World into the Belly of the Whale}
+           @t{The hero commits wholeheartedly to the adventure.}
+           @para{Face the Threshold Guardian and receive a minor @T{tag}.}
+           @t{1.00})
+           
+     (list @b{Initiation}
+           @b{The Road of Trials: Tests, Allies and Enemies}
+           @t{The hero explores the special world, faces trial, and makes friends and enemies.}
+           @para{This stage could last a long time. Provide a few minor @T{tag}s as rewards and maybe a @T{McGuffin}.}
+           @t{3.00})
+
+     (list @b{}
+           @b{Meeting with the Goddess and Approach to the Innermost Cave}
+           @t{The hero nears the center of the story and the special world}
+           @para{Require a @T{McGuffin} to find the center and proceed.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Atonement and Ordeal}
+           @t{The hero faces the greatest challenge yet and experiences death and rebirth.}
+           @para{All of the @T{McGuffin}s come into play.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Ultimate Boon and Reward}
+           @t{The hero experiences the consequences of surviving death.}
+           @para{Receive a major @T{tag}.}
+           @t{0.50})
+
+     (list @b{Return}
+           @b{The Road Back}
+           @t{The hero returns to the ordinary world or continues to an ultimate destination.}
+           @para{Mirror the Road of Trials, but with greater strength. Provide a few minor @T{tag}s as rewards.}
+           @t{1.50})
+
+     (list @b{}
+           @b{The Resurrection}
+           @t{The hero experiences a final moment of death and rebirth so they are pure when they reenter the ordinary world.}
+           @para{}
+           @t{0.50})
+
+     (list @b{}
+           @b{Return with the Elixir}
+           @t{The hero returns with something to improve the ordinary world}
+           @para{}
+           @t{0.50})
+           
+))]
+
+@subsection{Stories}
+
+Within each session of play or story, create a
+@link["https://en.wikipedia.org/wiki/Three-act_structure"]{Three-act
+structure} within the episode. Within an episode, give out temporary
+resources or @DT{clues} that will be used within the story, but are
+not relevant for the campaign. Finish the story with a @T{tag} as a
+reward or punishment and potentially a @T{McGuffin} being handed out.
+
+@tabular[
+    #:style 'boxed
+    #:sep (hspace 2)
+    #:column-properties '(left)
+    #:row-properties '(bottom-border)
+    (let ([b bold])
+    (list
+     (list @b{Act} @b{Stage} @b{Description} @b{Mechanics})
+     (list @b{Setup}
+           @b{Exposition}
+           @t{Connect this story to the last story and place it the campaign.}
+           @para{})
+
+     (list @b{}
+           @b{Dynamic Incident}
+           @t{Something happens to shock the @T{lead}s out of safety.}
+           @para{The threat will be faced with but cannot be defeated. Success will give a @T{clue}, but not defeat.})
+
+     (list @b{}
+           @b{Turning Point}
+           @t{The @T{lead}s realize why the threat could not be defeated.}
+           @para{This is another opportunity to find a @T{clue} without the threat involved.})
+
+     (list @b{Confrontation}
+           @b{Rising Action}
+           @t{The situation worsens as attempts to solve the threat fail or another twist is revealed.}
+           @para{There is a realization that another @T{clue} is necessary.})
+
+     (list @b{}
+           @b{Development}
+           @t{The @T{lead}s develop in some way that prepares them for the climax.}
+           @para{The keystone @T{clue} is received, or not.})
+
+     (list @b{Resolution}
+           @b{Climax}
+           @t{The threat is finally faced and defeated.}
+           @para{The @T{clue}s are finally consumed and disposed of.})
+
+     (list @b{}
+           @b{Falling Action}
+           @t{The consequences of success are understood and dealt with.}
+           @para{The @T{tag} for the reward or punishment is given and the episode is reconnected with the campaign.})))]
 
 @section{Resources}
 
