@@ -3,7 +3,9 @@
           racket/match
           racket/format
           racket/string
-          scribble/manual)
+          racket/runtime-path
+          scribble/manual
+          scribblings/quick/keep)
 
 @(begin
    (define DT deftech)
@@ -980,10 +982,16 @@ reward or punishment and potentially a @T{McGuffin} being handed out.
 
 @section{Resources}
 
+@(define-runtime-path here ".")
+@(define (keep-link p . label)
+  (keep-file (build-path here p))
+  (apply link p label))
+
 XXX character sheet
 XXX rule quick reference
-XXX abstract battle map
 XXX campaign/story structure worksheet
+
+@keep-link["battle-map.pdf"]{Abstract Battle Map (PDF)}
 
 @section{Acknowledgments}
 
