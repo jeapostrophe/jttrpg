@@ -61,7 +61,7 @@ creativity in general.
 @section{Basics}
 
 This is a game wherein a group of @T{players} (the @T{play group})
-collaborately tell a story (called the @T{fiction}) using
+collaboratively tell a story (called the @T{fiction}) using
 @T{mechanical} rules to adjudicate creative disputes and direct the
 story in an unexpected direction.
 
@@ -174,7 +174,7 @@ Otherwise, the @T{display} is a @T{failure}.
 
 @bold{Example:} Jean is researching the toxin sample discovered in the
 body of the victim and plays a @card{Eight}, the @T{GM} draws a
-@card{Seven}, so he learns that it is extra-terrestial in origin, but
+@card{Seven}, so he learns that it is extra-terrestrial in origin, but
 destroys the sample in the process.
 
 @bold{Example:} Elizabeth attacks the screen ogre with her scathing
@@ -197,7 +197,7 @@ never has a @T{partial} result for either.}
 the room to grab the fallen meteor rock. Pete chooses a @card{Jack},
 Chloe chooses a @card{Queen}, and Lana plays the @card{Seven}. Chloe
 reaches the rock first, Pete gets across the room but not in time,
-while Lana's jacket is stuck on the cappuchino machine and it is
+while Lana's jacket is stuck on the cappuccino machine and it is
 tumbling towards her.
 
 @subsubsection{Meta Notes}
@@ -262,7 +262,7 @@ Debate, Hypothesize, Heal, Deception, Lore, etc.}
  (list @t{@DT{Spirit}}
        @t{@card{Hearts}}
        @t{Wisdom, Charisma, Disrupt, Channel, Commune, Sense, Pray,
-Motivate, Appeal, Empathize, Persude, Convince, Intimidate, Intuit,
+Motivate, Appeal, Empathize, Persuade, Convince, Intimidate, Intuit,
 Order, Command, Provoke, Seduce, Manipulate, Barter, Sanity,  Leadership, etc.}
        @t{@T{Agility}}
        @t{@card{Spades}}))
@@ -294,7 +294,7 @@ writes ``blind'' in one of his hit boxes.
 the Unseen Darkness where he sees The Undying One. The sight corrupts
 Oscar's psyche and he writes ``neurotic'' in one of his hit boxes.
 
-In principle, @T{hit box}es are not mechnically neccessary because the
+In principle, @T{hit box}es are not mechanically necessary because the
 @T{tags} themselves are the in-@T{fiction} consequences of failure to
 deal with adversity, but they are a useful abstraction to benchmark
 failure.
@@ -453,7 +453,7 @@ ideas in this section.
 @T{lead} use a card that represents their readiness for the fight
 and (potentially) draw cards for non-@T{lead} participants. The
 relative ranking of the cards will determine the order in which
-subsequents actions take place.
+subsequent actions take place.
 
 @bold{Preparation.} Use the @bold{Initiative} card as a constant
 @T{modifier} throughout the battle: Add it to all cards that are used.
@@ -523,7 +523,7 @@ takes place in? Small town. City. High school. Colony
 Ship. Planet. Continent. Country. Galaxy.
 
 @bold{Genres.} Does the @T{fiction} fit an existing genre? High
-fantasy. Comic fantasty. Contemporary fantasy. Spiritual fantasy. Bug
+fantasy. Comic fantasy. Contemporary fantasy. Spiritual fantasy. Bug
 hunt. Space
 opera. Weird. Horror. Pulp. Slasher. Baroque. Supernatural. Ghost
 stories. Mystery. Espionage. War. Western. Martial
@@ -551,7 +551,7 @@ they quest for? Revenge. Glory. Honor. Duty. An ancient
 artifact. Family. Love.
 
 @bold{Job.} What is their job? Police officer. Scientist. Solider. Cook.
-Researcher. Librarian. Advisor. Diplomat. Trader. Guard. Knight. Retail.
+Researcher. Librarian. Adviser. Diplomat. Trader. Guard. Knight. Retail.
 
 @bold{Training.} What special training do they have?
 Weapons. Science. Magic. Computers. Research. Geography. Animals.
@@ -587,7 +587,7 @@ moments and the kinds of things that need to happen, then let the
 @T{fiction} lead some place interesting. If the campaign is a season
 of a TV show, then each story is an episode. Most episodes will be
 self-contained, but push the greater arc of the story too. Think about
-having ``specials'' that incorprate interesting and different styles
+having ``specials'' that incorporate interesting and different styles
 as you go.
 
 @section{Player Advice}
@@ -627,7 +627,7 @@ Babe. Brainer. Chopper. Hardholder. Gunlugger. Gunslinger. Hocus. Techie. Skinne
 Expert. Rogue. Jack of All Trades. Mage. High-born. Slayer. Vampire
 Killer. Chosen One. Low-born. Mystic. Devout Acolyte. Errant
 Occultist. Magician's Apprentice. Adventurer. Rune
-Caster. Ranger. Vagabound. Outrider. Dragoon. Future
+Caster. Ranger. Vagabond. Outrider. Dragoon. Future
 Warlord. Forgotten Child. Novice Templar. Gifted Dilettante. Noble's
 Daughter. Reformed Bully. Self-Taught Mage. Untested Thief. Village
 Hero. Heir to Legend. Would-be Knight. Woodsman. Angsty Shadow
@@ -639,7 +639,7 @@ Warrior Mage. Chosen Seer. Ordinary Kid in Fantasy World. Plucky
 Hero. Sacred Machine. Ancient Machine. Charming Knave. Clever Treasure
 Hunter. Slimy Cutpurse. Big Bruiser. Legendary Hero. Clever
 Swordsman. Sexy Sorceress. Sneaky Mage. Mystic Maniac. Little
-Monster. Sexy Dynamite. Brutal Captain. Captain Charima. War
+Monster. Sexy Dynamite. Brutal Captain. Captain Charisma. War
 Diva. Master Tactician. Battle Priest. Holy Invoker. Mad
 Preacher. Holy Dancer. Pure Divinity. Willful Scion. Mad
 Oracle. Charismatic Warrior. Charming Champion. Unrelenting
@@ -689,7 +689,7 @@ friends as kids. They have a crush on you. They have a magical
 artifact that affects you. They are actually your parent. They killed
 your family member. A dark power sent you to them. You trained
 together. You are secretly buddies but publicly enemies. You were
-lovers. You are obssessed with them. You were set up with them,
+lovers. You are obsessed with them. You were set up with them,
 but…. They brought you out of the darkness. A dark power is after them
 and only you know. They showed up on Earth and are responsible for
 what happened to you. They took something from you. You had to find
@@ -701,7 +701,7 @@ thick and thin together. They constantly undermine you. They know
 about your true destiny, but you don't. They want you to cast the
 final ritual. They were apprenticed with you, but weren't as good as
 you. You accidentally blew something up important to them. They fear
-you will interfer with their plans. Your parents asked them to take
+you will interfere with their plans. Your parents asked them to take
 care of you. You are hopelessly in love with them. They served you in
 the last war. You must acquire it at all costs. You were supposed to
 receive it, but it was denied. They are your biggest fan. You know you
@@ -722,14 +722,14 @@ Quest. Voyage and
 Return. Comedy. Tragedy. Rebirth. Supplication. Crime Pursued By
 Vengeance. Pursuit. Obtaining. Self-sacrifice For An
 Ideal. Deliverance. Daring Enterprise. Returners. Abduction. The
-Engima. Recovery of a Lost One. Vengeance Taken For Kin Upon
+Enigma. Recovery of a Lost One. Vengeance Taken For Kin Upon
 Kin. Enmity of Kin. Rivalry of Kin. Slayer of Kin
 Unrecognized. Self-sacrifice for Kin. Necessity of Sacrificing Loved
-Ones. Discovery of the Dishonour of a Loved One. Loss of Loved
+Ones. Discovery of the Dishonor of a Loved One. Loss of Loved
 Ones. Disaster. Revolt. Rivalry of Superior vs
-Inferior. Ambition. Conflict with a God. Fallying Prey to
+Inferior. Ambition. Conflict with a God. Falling Prey to
 Misfortune. Madness. Fatal Imprudence. Erroneous
-Judgement. Remorse. Murderous Adultery. Involuntary Crimes of
+Judgment. Remorse. Murderous Adultery. Involuntary Crimes of
 Love. Sacrifice for Passion. Adultery. Crimes of Love. Obstacles to
 Love. An Enemy Loved. Mistaken Jealousy.  }
 
@@ -994,10 +994,14 @@ reward or punishment and potentially a @T{McGuffin} being handed out.
   (apply link p label))
 
 XXX rule quick reference
-XXX campaign/story structure worksheet
 
-@keep-link["battle-map.pdf"]{Abstract Battle Map (PDF)}
-@keep-link["char-sheet.pdf"]{Character Sheet (PDF)}
+Here are some downloadable files for helping organize your campaign.
+
+@itemlist[
+@item{@keep-link["battle-map.pdf"]{Abstract Battle Map (PDF)}}
+@item{@keep-link["campaign-template.org"]{Campaign Template (Org)}}
+@item{@keep-link["char-sheet.pdf"]{Character Sheet (PDF)}}
+]
 
 @section{Acknowledgments}
 
