@@ -1,7 +1,7 @@
 * Story
 ** Act 1: Setup
 *** Exposition
-    === Connect this story to the last story and place it the
+    === Connect this story to the last story and place it in the
     campaign.
 *** Dynamic Incident
     === Something happens to shock the leads out of safety.
@@ -46,7 +46,7 @@
 *** [0.25] Refusal of the Call
     === The hero experiences some hesitation to answer the call.
   
-    --- Perhaps have some innocuous be a McGuffin for later.
+    --- Perhaps have something innocuous be a McGuffin for later.
 *** [0.25] Meeting with the Mentor and Receiving Supernatural Aid
     === The hero gains the supplies, knowledge, and confidence needed
     to commence the adventure.

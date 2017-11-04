@@ -50,11 +50,11 @@
 @title{Woah!}
 @author{@author+email["Jay McCarthy" "jay.mccarthy@gmail.com"]}
 
-This document describes the tabletop role-playing game I play with my
-kids and friends. It is deliberately described in an abstract way,
-because we apply it to different scenarios and settings as our taste
-changes. It attempts to have strategic thinking, with lots of
-creativity in general.
+This document describes @emph{Woah!}, the tabletop role-playing game I
+play with my kids and friends. It is deliberately described in an
+abstract way, because we apply it to different scenarios and settings
+as our taste changes. It attempts to have strategic thinking, with
+lots of creativity in general.
 
 @table-of-contents[]
 
@@ -74,7 +74,7 @@ aspects of the @T{fiction} that are not directly @T{mechanical} are
 referred to as @T{flavor}.
 
 The @DT{mechanical} rules are the particular rules of the game having
-to do with number, cards, statistics, and so on. They exist to
+to do with numbers, cards, statistics, and so on. They exist to
 adjudicate disputes between members of the @T{play group}, such as
 when one @T{player} wants the hero to save the damsel and another
 @T{player} wants the damsel to have already defeated the monster. They
@@ -92,19 +92,19 @@ adjudicates between @T{leads}.
 
 This section explains the @T{mechanical} rules.
 
+@margin-note{By re-drawing when there is only one card left, this
+allows @T{leads} to strategically save high cards for important
+circumstances.}
+
 The @T{play group} has a deck of normal playing cards, called the
 @DT{deck}.The @T{deck} is divided into two partitions: the @DT{draw
 pile} and the @DT{discard pile}. At the start of a play session, the
 @T{discard pile} is empty and each @T{lead} is dealt a @DT{hand} of
-@HOW-BIG-HANDs cards from the @T{draw pile}. When a @T{lead} uses a
-card, then it is put in the @T{discard pile}. When the @T{lead}'s
-@T{hand} contains fewer than two cards, then they draw up to
-@HOW-BIG-HANDs cards from the @T{draw pile}, reshuffling the
-@T{discard pile} as the new @T{draw pile} if necessary.
-
-@margin-note{By re-drawing when there is only one card left, this
-allows @T{leads} to strategically save high cards for important
-circumstances.}
+@HOW-BIG-HANDs cards from the @T{draw pile}. After a @T{lead} uses a
+card, the card is put in the @T{discard pile}. Once the @T{lead}'s
+@T{hand} contains fewer than two cards, they draw cards from the
+@T{draw pile} until they have @HOW-BIG-HANDs cards in their @T{hand},
+reshuffling the @T{discard pile} when the @T{draw pile} is exhausted.
 
 The @DT{suit} of the cards is relevant in play. Each @T{suit}
 corresponds to an @T{attribute} and has an @T{opposed suit} based on
@@ -167,7 +167,7 @@ card is inspected after incorporating all applicable @T{modifiers}.
 If the @T{lead}'s card is a @card{Face} card @bold{AND} is greater than or
 equal to the @T{GM}'s card, then the @T{display} is a @T{success}.
 
-If the @T{lead}'s card is a @card{Face} card @bold{OR} is greater than or
+If the @T{lead}'s card is a @card{Face} card @bold{XOR} is greater than or
 equal to the @T{GM}'s card, then the @T{display} is a @T{partial}.
 
 Otherwise, the @T{display} is a @T{failure}.
@@ -184,14 +184,14 @@ Elizabeth shatters the ogre and continues the day victorious.
 @subsubsection{Contests}
 
 In a @DT{contest}, there are @racket[n] participants which are all
-@T{lead}s. Each participant selects a card from their @T{hand} and
-uses it. No card should not be revealed until all @T{lead}s have used
-a card. The cards are ordered after incorporating all applicable
-@T{modifiers}. The player of the unique highest card has a
-@T{success}. The player of the unique lowest card has a
-@T{failure}. The player of all cards in the middle have a
-@T{partial}. @margin-note{A @T{contest} involving two participants
-never has a @T{partial} result for either.}
+@T{lead}s. Each participant selects a card from their @T{hand} to use
+and place face down in front them. (No card should be revealed
+until all @T{lead}s have selected a card.) The cards are revealed and
+then ordered after incorporating all applicable @T{modifiers}. The
+player of the unique highest card has a @T{success}. The player of the
+unique lowest card has a @T{failure}. The players of all cards in the
+middle have a @T{partial}. @margin-note{A @T{contest} involving two
+participants never has a @T{partial} result for either.}
 
 @bold{Example:} Pete, Chloe, and Lana---all @T{leads}---race across
 the room to grab the fallen meteor rock. Pete chooses a @card{Jack},
@@ -222,15 +222,16 @@ Each @T{lead} has a few @T{mechanical} concepts associated with them:
 
 @ack["https://www.kickstarter.com/projects/matthewjhanson/the-fastest-rpg-ive-ever-played-abstract-dungeon"]{Abstract Dungeon}
 
-A @T{lead} has four @DT{attributes}, which are each associated with
-various actions and qualities and a @T{suit} in the @T{deck}. Each
-@T{attribute} has an @DT{opposed attribute} and an @DT{opposed suit}.
+A @T{lead} has four @DT{attributes}, which are each associated with a
+@T{suit} in the @T{deck} as well as various actions and
+qualities. Each @T{attribute} has an @DT{opposed attribute} and an
+@DT{opposed suit}.
 
 @tabular[
 #:style 'boxed
 #:sep @hspace[2]
 #:column-properties '(center center left)
-#:row-properties '(bottom-border ())
+#:row-properties '(bottom-border)
 (list
  (list @bold{Attribute} @bold{Suit} @bold{Actions and Qualities}
        @bold{Opposed Attribute} @bold{Opposed Suit})
@@ -332,16 +333,16 @@ delves, having a sword might not be a @T{tag} but ``Has the mystical
 blade Vorpalice'' is a @T{tag}.
 
 @T{Tags} should have both @T{mechanical} and @T{flavor}
-significance. They should influence how success @T{leads} are, what
+significance. They should influence how successful @T{leads} are, what
 they can do, and what their goals, desires, and passions are.
 
-Periodically throughout play, new @T{tags} should be given. They
-should be positive and negative @T{consequences} for individual
-actions, as well as a result of pivotal story moments.
+Periodically throughout play, new @T{tags} should be given by the
+@T{gamemaster}. They should be positive and negative @T{consequences}
+for individual actions, as well as a result of pivotal story moments.
 
 @subsection{Modifiers}
 
-When a @T{lead} faces a @T{test} and plays a card, the incorporate a
+When a @T{lead} faces a @T{test} and plays a card, they incorporate a
 variety of @DT{modifiers} to the value of the card.
 
 First, they incorporate the @T{test suit} of the action. If the
@@ -398,7 +399,7 @@ for a special quality, and one or two for any special resources.}
 
 ]
 
-@bold{Example:} Sally Summers is the Zombie Slayer, an mythical role
+@bold{Example:} Sally Summers is the Zombie Slayer, a mythical role
 filled each generation by one teenage girl in all the world. She
 fights with the enchanted whip, @italic{Lightbringer}, and has a
 mystical connection to the spirits of past Slayers. Her attribute
@@ -425,7 +426,7 @@ apply.
 
 The @T{consequences} of @T{tests} may have @T{mechanical} impacts. In
 particular, it is common that a @T{consequence} is to gain or lose a
-@T{tag} or to fill in a @T{hit box}.
+@T{tag} or to fill-in a @T{hit box}.
 
 @bold{Example:} Sarai fails to convince the border guards of her
 identity, so her supplies are stolen and she is forced back into the
@@ -544,13 +545,13 @@ family. The best school. An orphan. From another place.
 
 @bold{Code.} What standards to they uphold as a guiding force in their
 life? Uphold the law. Never lie. Family. Duty. Honor. Survival of the
-fittest. Loyalty.
+fittest. Loyalty. Always pays their debts.
 
 @bold{Motivation.} What motivates their actions in the story? What do
 they quest for? Revenge. Glory. Honor. Duty. An ancient
 artifact. Family. Love.
 
-@bold{Job.} What is their job? Police officer. Scientist. Solider. Cook.
+@bold{Job.} What is their job? Police officer. Scientist. Soldier. Cook.
 Researcher. Librarian. Adviser. Diplomat. Trader. Guard. Knight. Retail.
 
 @bold{Training.} What special training do they have?
@@ -560,9 +561,9 @@ Weapons. Science. Magic. Computers. Research. Geography. Animals.
 
 Once you know the world that you are in, you should determine the
 whole story of the @T{fiction}. I like to think of the campaign as a
-season of a TV show. Here are some ideas.
+season of a TV show. Here are some ideas:
 
-@bold{War.} There is a war that has started or will star and the
+@bold{War.} There is a war that has started or will start and the
 @T{lead}s need to do something to stop it, win it, turn the tables,
 etc.
 
@@ -582,7 +583,7 @@ that must be prepared for and stopped.
 
 @subsection[#:tag "flav-stories"]{Stories}
 
-Your campaign is many of many stories. I like to plan a few key
+Your campaign is made of many stories. It works well to plan a few key
 moments and the kinds of things that need to happen, then let the
 @T{fiction} lead some place interesting. If the campaign is a season
 of a TV show, then each story is an episode. Most episodes will be
@@ -600,7 +601,7 @@ concise and let others play.
 Respect the other @T{lead}s and don't alter their behavior
 significantly from their established patterns.
 
-Stay consistency with the setting, campaign, and established parts of
+Stay consistent with the setting, campaign, and established parts of
 the story. Occasionally a ret-con or plot-twist is appropriate.
 
 Use a timer sometimes to make a moment tense and give the @T{leads}
@@ -719,12 +720,12 @@ even the whole campaign.
 
 @sentence-table[2]{ Overcoming the Monster. Rags to Riches. The
 Quest. Voyage and
-Return. Comedy. Tragedy. Rebirth. Supplication. Crime Pursued By
-Vengeance. Pursuit. Obtaining. Self-sacrifice For An
+Return. Comedy. Tragedy. Rebirth. Supplication. Crime Pursued by
+Vengeance. Pursuit. Obtaining. Self-Sacrifice for an
 Ideal. Deliverance. Daring Enterprise. Returners. Abduction. The
-Enigma. Recovery of a Lost One. Vengeance Taken For Kin Upon
+Enigma. Recovery of a Lost One. Vengeance Taken for Kin Upon
 Kin. Enmity of Kin. Rivalry of Kin. Slayer of Kin
-Unrecognized. Self-sacrifice for Kin. Necessity of Sacrificing Loved
+Unrecognized. Self-Sacrifice for Kin. Necessity of Sacrificing Loved
 Ones. Discovery of the Dishonor of a Loved One. Loss of Loved
 Ones. Disaster. Revolt. Rivalry of Superior vs
 Inferior. Ambition. Conflict with a God. Falling Prey to
@@ -748,7 +749,7 @@ or replace something they have. }
 
 When @T{leads} take @T{actions}, it is more interesting to give the
 @T{player} hard choices for how to put their @T{consequences} into the
-@T{fiction}. Here are some templates for different kind of actions:
+@T{fiction}. Here are some templates for different kinds of actions:
 
 @(struct *action (what fail-o partial-o succ-o opts))
 @(define (action what fail-o partial-o succ-o [opts #f])
@@ -842,7 +843,7 @@ and the story beats that you will hit. Follow a
 structure} and model it after a classic narrative structure like the
 @link["https://en.wikipedia.org/wiki/Hero's_journey"]{Hero's journey /
 Monomyth}. Punctuate the acts with the reception of an important new
-@T{tag} for each character that drastically changes how their
+@T{tag} for each character that drastically changes their
 capabilities. Put a few @DT{McGuffins} on their path that will
 determine the difficulty of the ordeal, if they fall into the Big
 Bad's hands.
@@ -875,7 +876,7 @@ Monomyth}:
      (list @b{}
            @b{Refusal of the Call}
            @t{The hero experiences some hesitation to answer the call.}
-           @para{Perhaps have some innocuous be a @T{McGuffin} for later.}
+           @para{Perhaps have something innocuous be a @T{McGuffin} for later.}
            @t{0.25})
            
      (list @b{}
@@ -953,7 +954,7 @@ reward or punishment and potentially a @T{McGuffin} being handed out.
      (list @b{Act} @b{Stage} @b{Description} @b{Mechanics})
      (list @b{Setup}
            @b{Exposition}
-           @t{Connect this story to the last story and place it the campaign.}
+           @t{Connect this story to the last story and place it in the campaign.}
            @para{})
 
      (list @b{}
