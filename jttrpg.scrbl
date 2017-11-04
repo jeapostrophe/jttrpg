@@ -994,14 +994,13 @@ reward or punishment and potentially a @T{McGuffin} being handed out.
   (keep-file (build-path here p))
   (apply link p label))
 
-XXX rule quick reference
-
 Here are some downloadable files for helping organize your campaign.
 
 @itemlist[
 @item{@keep-link["battle-map.pdf"]{Abstract Battle Map (PDF)}}
 @item{@keep-link["campaign-template.org"]{Campaign Template (Org)}}
 @item{@keep-link["char-sheet.pdf"]{Character Sheet (PDF)}}
+@item{@keep-link["quick-reference.pdf"]{Quick Reference (PDF)}}
 ]
 
 @section{Acknowledgments}
