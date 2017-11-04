@@ -47,7 +47,7 @@
               #:row-properties '(bottom-border)
               (chunk num "" (remove-duplicates sents)))))
 
-@title{JTTRPG}
+@title{Woah!}
 @author{@author+email["Jay McCarthy" "jay.mccarthy@gmail.com"]}
 
 This document describes the tabletop role-playing game I play with my
@@ -239,7 +239,7 @@ various actions and qualities and a @T{suit} in the @T{deck}. Each
        @t{@card{Clubs}}
        @t{Strength, Vitality, Constitution, Bend, Absorb, Pry, Throw,
 Hack, Slash, Flex, Endure, Break, Bust, Jump, Climb, Swim, Chug,
-Sprint, Crush, Push, Pull, Lift, Carry, Hard, etc.}
+Sprint, Crush, Push, Pull, Lift, Carry, Hard, Athletics, Survival, etc.}
        @t{@T{Intellect}}
        @t{@card{Diamonds}})
  
@@ -247,7 +247,7 @@ Sprint, Crush, Push, Pull, Lift, Carry, Hard, etc.}
        @t{@card{Spades}}
        @t{Dexterity, Finesse, Escape, Elude, Deflect, Shoot, Skewer,
 Dodge, Parry, Balance, Tumble, Roll, Flip, Dance, Weave, Catch, Pick,
-Disarm, Stun, Tie, etc.}
+Disarm, Stun, Tie, Awareness, Stealth, etc.}
        @t{@T{Spirit}}
        @t{@card{Hearts}})
  
@@ -255,7 +255,7 @@ Disarm, Stun, Tie, etc.}
        @t{@card{Diamonds}}
        @t{Intelligence, Insight, Study, Solve, Riddle, Cast, Think,
 Remember, Ponder, Deduce, Reason, Decipher, Invent, Search, Convince,
-Debate, Hypothesize, Heal, etc.}
+Debate, Hypothesize, Heal, Deception, Lore, etc.}
        @t{@T{Toughness}}
        @t{@card{Clubs}})
  
@@ -263,7 +263,7 @@ Debate, Hypothesize, Heal, etc.}
        @t{@card{Hearts}}
        @t{Wisdom, Charisma, Disrupt, Channel, Commune, Sense, Pray,
 Motivate, Appeal, Empathize, Persude, Convince, Intimidate, Intuit,
-Order, Command, Provoke, Seduce, Manipulate, Barter, Sanity, etc.}
+Order, Command, Provoke, Seduce, Manipulate, Barter, Sanity,  Leadership, etc.}
        @t{@T{Agility}}
        @t{@card{Spades}}))
 ]
@@ -657,7 +657,13 @@ Knight. Mystic Knight. Magic Knight. Necromancer. Ninja. Onion
 Knight. Oracle. Orator. Pirate. Puppetmaster. Ravager. Saboteur. Samurai. Scholar. Seer. Sentinel. Sky
 Pirate. Sniper. Soldier. Squire. Summoner. Synergist. Thief. Time
 Mage. Trickster. Viking. Spiritmaster. Vampire. Conjurer. Salve-Maker. Performer. Valkyrie. Spell
-Fencer. Swordmaster. Charioteer. Catmancer. Hawkeye. Patissier. Bandit. Musician. Seamstress. Scribe. Storyteller. Avenger. Artificer. Invoker. Psion. Shaman. Warden. Warlock. Warlord. }
+Fencer. Swordmaster. Charioteer. Catmancer. Hawkeye. Patissier. Bandit. Musician. Seamstress. Scribe. Storyteller. Avenger. Artificer. Invoker. Psion. Shaman. Warden. Warlock. Warlord. Brigand. Striker. Duelist. Augur. Battlemaster. Beguiler. Blood
+Mage. Brute. Changeling. Charlatan. Charred. City Thief. Clock
+Mage. Clockpunk. Cursed Knight. Dashing
+Hero. Drider. Dwarf. Elf. Halfling. Orc. Fae. Fool. Gallant. Ghost. Giant. Impostor. Inquistor. Masked
+Man. Mastermind. Mentor. Merchant
+Prince. Metamorph. Mimic. Ogre. Overlord. Punk. Ronin. Shadow. Spellslinger. Star
+Mage. Vampire Killer. Wanderer. Veteran. Witch. }
 
 Use these tropes to come up with your character concept, as well as
 your initial set of @T{tags}. You can also think about unique items
@@ -987,11 +993,11 @@ reward or punishment and potentially a @T{McGuffin} being handed out.
   (keep-file (build-path here p))
   (apply link p label))
 
-XXX character sheet
 XXX rule quick reference
 XXX campaign/story structure worksheet
 
 @keep-link["battle-map.pdf"]{Abstract Battle Map (PDF)}
+@keep-link["char-sheet.pdf"]{Character Sheet (PDF)}
 
 @section{Acknowledgments}
 
@@ -1015,7 +1021,3 @@ The ideas in this document are inspired by many other great RPGs:
 @(apply itemlist
         (map (λ (v) (item (link (vector-ref v 0) (vector-ref v 1))))
              (sort ACKS string<=? #:key (λ (v) (vector-ref v 1)))))
-
-XXX Worlds of Adventure
-
-XXX Dungeon World
