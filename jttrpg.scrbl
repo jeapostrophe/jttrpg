@@ -202,6 +202,10 @@ tumbling towards her.
 
 @subsubsection{Meta Notes}
 
+@bold{Optional Note:} If you leave the @card{Joker} in the deck, then
+whenever it is drawn, make it a catastrophic, scene-changing
+@T{failure}.
+
 @bold{Strategic Note:} @T{Leads} know which cards have already been
 played and which have not, so they have a fuzzy estimate of what cards
 they may go up against. Similarly, they have an idea of where their
